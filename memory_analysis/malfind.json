@@ -1,0 +1,295 @@
+[
+    {
+        "PID": "5896",
+        "Process": "oneetx.exe",
+        "Start": "0x400000",
+        "VPN": "PAGE_EXECUTE_READWRITE",
+        "End": "VadS",
+        "Tag": "56",
+        "Protection": "1",
+        "CommitCharge": "Disabled",
+        "PrivateMemory": "MZ",
+        "File": "header"
+    },
+    {
+        "PID": "4d",
+        "Process": "5a",
+        "Start": "90",
+        "VPN": "00",
+        "End": "03",
+        "Tag": "00",
+        "Protection": "00",
+        "CommitCharge": "04",
+        "PrivateMemory": "00",
+        "File": "00",
+        "output": "00",
+        "Notes": "ff",
+        "Hexdump": "ff",
+        "Disasm": "00"
+    },
+    {
+        "PID": "b8",
+        "Process": "00",
+        "Start": "00",
+        "VPN": "00",
+        "End": "00",
+        "Tag": "00",
+        "Protection": "00",
+        "CommitCharge": "40",
+        "PrivateMemory": "00",
+        "File": "00",
+        "output": "00",
+        "Notes": "00",
+        "Hexdump": "00",
+        "Disasm": "00"
+    },
+    {
+        "PID": "00",
+        "Process": "00",
+        "Start": "00",
+        "VPN": "00",
+        "End": "00",
+        "Tag": "00",
+        "Protection": "00",
+        "CommitCharge": "00",
+        "PrivateMemory": "00",
+        "File": "00",
+        "output": "00",
+        "Notes": "00",
+        "Hexdump": "00",
+        "Disasm": "00"
+    },
+    {
+        "PID": "00",
+        "Process": "00",
+        "Start": "00",
+        "VPN": "00",
+        "End": "00",
+        "Tag": "00",
+        "Protection": "00",
+        "CommitCharge": "00",
+        "PrivateMemory": "00",
+        "File": "00",
+        "output": "00",
+        "Notes": "00",
+        "Hexdump": "01",
+        "Disasm": "00"
+    },
+    {
+        "PID": "0x400000:",
+        "Process": "dec",
+        "Start": "ebp"
+    },
+    {
+        "PID": "0x400001:",
+        "Process": "pop",
+        "Start": "edx"
+    },
+    {
+        "PID": "0x400002:",
+        "Process": "nop"
+    },
+    {
+        "PID": "0x400003:",
+        "Process": "add",
+        "Start": "byte",
+        "VPN": "al",
+        "End": "[ebx],"
+    },
+    {
+        "PID": "0x400005:",
+        "Process": "add",
+        "Start": "byte",
+        "VPN": "al",
+        "End": "[eax],"
+    },
+    {
+        "PID": "0x400007:",
+        "Process": "add",
+        "Start": "byte",
+        "VPN": "+",
+        "End": "[eax",
+        "Tag": "eax],",
+        "Protection": "al"
+    },
+    {
+        "PID": "0x40000a:",
+        "Process": "add",
+        "Start": "byte",
+        "VPN": "al",
+        "End": "[eax],"
+    },
+    {
+        "PID": "7540",
+        "Process": "smartscreen.ex",
+        "Start": "0x2505c140000",
+        "VPN": "PAGE_EXECUTE_READWRITE",
+        "End": "VadS",
+        "Tag": "1",
+        "Protection": "1",
+        "CommitCharge": "Disabled",
+        "PrivateMemory": "N/A"
+    },
+    {
+        "PID": "48",
+        "Process": "89",
+        "Start": "54",
+        "VPN": "48",
+        "End": "10",
+        "Tag": "89",
+        "Protection": "4c",
+        "CommitCharge": "24",
+        "PrivateMemory": "08",
+        "File": "4c",
+        "output": "89",
+        "Notes": "44",
+        "Hexdump": "24",
+        "Disasm": "18"
+    },
+    {
+        "PID": "89",
+        "Process": "4c",
+        "Start": "24",
+        "VPN": "8b",
+        "End": "48",
+        "Tag": "41",
+        "Protection": "28",
+        "CommitCharge": "48",
+        "PrivateMemory": "8b",
+        "File": "48",
+        "output": "08",
+        "Notes": "48",
+        "Hexdump": "8b",
+        "Disasm": "51"
+    },
+    {
+        "PID": "48",
+        "Process": "83",
+        "Start": "e2",
+        "VPN": "8b",
+        "End": "48",
+        "Tag": "ca",
+        "Protection": "48",
+        "CommitCharge": "b8",
+        "PrivateMemory": "60",
+        "File": "00",
+        "output": "14",
+        "Notes": "5c",
+        "Hexdump": "50",
+        "Disasm": "02"
+    },
+    {
+        "PID": "00",
+        "Process": "48",
+        "Start": "2b",
+        "VPN": "81",
+        "End": "48",
+        "Tag": "f9",
+        "Protection": "70",
+        "CommitCharge": "0f",
+        "PrivateMemory": "00",
+        "File": "00",
+        "output": "76",
+        "Notes": "09",
+        "Hexdump": "48",
+        "Disasm": "c7"
+    },
+    {
+        "PID": "0x2505c140000:",
+        "Process": "mov",
+        "Start": "qword",
+        "VPN": "+",
+        "End": "[rsp",
+        "Tag": "0x10],",
+        "Protection": "rdx"
+    },
+    {
+        "PID": "0x2505c140005:",
+        "Process": "mov",
+        "Start": "qword",
+        "VPN": "+",
+        "End": "[rsp",
+        "Tag": "8],",
+        "Protection": "rcx"
+    },
+    {
+        "PID": "0x2505c14000a:",
+        "Process": "mov",
+        "Start": "qword",
+        "VPN": "+",
+        "End": "[rsp",
+        "Tag": "0x18],",
+        "Protection": "r8"
+    },
+    {
+        "PID": "0x2505c14000f:",
+        "Process": "mov",
+        "Start": "qword",
+        "VPN": "+",
+        "End": "[rsp",
+        "Tag": "0x20],",
+        "Protection": "r9"
+    },
+    {
+        "PID": "0x2505c140014:",
+        "Process": "mov",
+        "Start": "rax,",
+        "VPN": "[rcx",
+        "End": "ptr",
+        "Tag": "+",
+        "Protection": "0x28]"
+    },
+    {
+        "PID": "0x2505c140018:",
+        "Process": "mov",
+        "Start": "rcx,",
+        "VPN": "[rax",
+        "End": "ptr",
+        "Tag": "+",
+        "Protection": "8]"
+    },
+    {
+        "PID": "0x2505c14001c:",
+        "Process": "mov",
+        "Start": "rdx,",
+        "VPN": "[rcx",
+        "End": "ptr",
+        "Tag": "+",
+        "Protection": "0x50]"
+    },
+    {
+        "PID": "0x2505c140020:",
+        "Process": "and",
+        "Start": "rdx,",
+        "VPN": "0xfffffffffffffff8"
+    },
+    {
+        "PID": "0x2505c140024:",
+        "Process": "mov",
+        "Start": "rcx,",
+        "VPN": "rdx"
+    },
+    {
+        "PID": "0x2505c140027:",
+        "Process": "movabs",
+        "Start": "rax,",
+        "VPN": "0x2505c140060"
+    },
+    {
+        "PID": "0x2505c140031:",
+        "Process": "sub",
+        "Start": "rcx,",
+        "VPN": "rax"
+    },
+    {
+        "PID": "0x2505c140034:",
+        "Process": "cmp",
+        "Start": "rcx,",
+        "VPN": "0xf70"
+    },
+    {
+        "PID": "0x2505c14003b:",
+        "Process": "jbe",
+        "Start": "0x2505c140046"
+    }
+]

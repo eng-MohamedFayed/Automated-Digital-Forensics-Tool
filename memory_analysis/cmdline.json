@@ -1,0 +1,499 @@
+[
+    {
+        "PID": "4",
+        "Process": "System",
+        "Args": "Required"
+    },
+    {
+        "PID": "108",
+        "Process": "Registry",
+        "Args": "Required"
+    },
+    {
+        "PID": "332",
+        "Process": "smss.exe",
+        "Args": "Process"
+    },
+    {
+        "PID": "452",
+        "Process": "csrss.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "528",
+        "Process": "csrss.exe"
+    },
+    {
+        "PID": "552",
+        "Process": "wininit.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "588",
+        "Process": "winlogon.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "676",
+        "Process": "services.exe",
+        "Args": "C:\\Windows\\system32\\services.exe"
+    },
+    {
+        "PID": "696",
+        "Process": "lsass.exe",
+        "Args": "C:\\Windows\\system32\\lsass.exe"
+    },
+    {
+        "PID": "824",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "852",
+        "Process": "fontdrvhost.ex",
+        "Args": "Required"
+    },
+    {
+        "PID": "860",
+        "Process": "fontdrvhost.ex",
+        "Args": "Required"
+    },
+    {
+        "PID": "952",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "1016",
+        "Process": "dwm.exe",
+        "Args": "\"dwm.exe\""
+    },
+    {
+        "PID": "448",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "752",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\System32\\svchost.exe"
+    },
+    {
+        "PID": "1012",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\System32\\svchost.exe"
+    },
+    {
+        "PID": "1196",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "1280",
+        "Process": "MemCompression",
+        "Args": "Required"
+    },
+    {
+        "PID": "1376",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "1448",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\System32\\svchost.exe"
+    },
+    {
+        "PID": "1496",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\System32\\svchost.exe"
+    },
+    {
+        "PID": "1644",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "1652",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "1840",
+        "Process": "spoolsv.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "1892",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "2024",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "2076",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\System32\\svchost.exe"
+    },
+    {
+        "PID": "2144",
+        "Process": "vmtoolsd.exe",
+        "Args": "\"C:\\Program"
+    },
+    {
+        "PID": "2152",
+        "Process": "vm3dservice.ex",
+        "Args": "Process"
+    },
+    {
+        "PID": "2200",
+        "Process": "VGAuthService.",
+        "Args": "Required"
+    },
+    {
+        "PID": "2404",
+        "Process": "vm3dservice.ex",
+        "Args": "Required"
+    },
+    {
+        "PID": "3028",
+        "Process": "dllhost.exe",
+        "Args": "C:\\Windows\\system32\\dllhost.exe"
+    },
+    {
+        "PID": "832",
+        "Process": "msdtc.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "1232",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "1392",
+        "Process": "sihost.exe",
+        "Args": "sihost.exe"
+    },
+    {
+        "PID": "1064",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "1600",
+        "Process": "taskhostw.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "3204",
+        "Process": "ctfmon.exe",
+        "Args": "\"ctfmon.exe\""
+    },
+    {
+        "PID": "3556",
+        "Process": "userinit.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "3580",
+        "Process": "explorer.exe",
+        "Args": "C:\\Windows\\Explorer.EXE"
+    },
+    {
+        "PID": "3944",
+        "Process": "WmiPrvSE.exe",
+        "Args": "C:\\Windows\\system32\\wbem\\wmiprvse.exe"
+    },
+    {
+        "PID": "3004",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "1116",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "3160",
+        "Process": "StartMenuExper",
+        "Args": "\"C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe\""
+    },
+    {
+        "PID": "4116",
+        "Process": "RuntimeBroker.",
+        "Args": "Required"
+    },
+    {
+        "PID": "4228",
+        "Process": "SearchIndexer.",
+        "Args": "C:\\Windows\\system32\\SearchIndexer.exe"
+    },
+    {
+        "PID": "4448",
+        "Process": "RuntimeBroker.",
+        "Args": "C:\\Windows\\System32\\RuntimeBroker.exe"
+    },
+    {
+        "PID": "464",
+        "Process": "SecurityHealth",
+        "Args": "Required"
+    },
+    {
+        "PID": "3252",
+        "Process": "vmtoolsd.exe",
+        "Args": "\"C:\\Program"
+    },
+    {
+        "PID": "5136",
+        "Process": "SecurityHealth",
+        "Args": "Required"
+    },
+    {
+        "PID": "5328",
+        "Process": "msedge.exe",
+        "Args": "\"C:\\Program"
+    },
+    {
+        "PID": "4396",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "1144",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "4544",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5340",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5704",
+        "Process": "RuntimeBroker.",
+        "Args": "C:\\Windows\\System32\\RuntimeBroker.exe"
+    },
+    {
+        "PID": "1764",
+        "Process": "dllhost.exe"
+    },
+    {
+        "PID": "1916",
+        "Process": "SearchApp.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6200",
+        "Process": "SgrmBroker.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6696",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "7312",
+        "Process": "ApplicationFra",
+        "Args": "C:\\Windows\\system32\\ApplicationFrameHost.exe"
+    },
+    {
+        "PID": "7772",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6724",
+        "Process": "Outline.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "4224",
+        "Process": "Outline.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "7160",
+        "Process": "SearchApp.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "4628",
+        "Process": "tun2socks.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6048",
+        "Process": "taskhostw.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "8264",
+        "Process": "RuntimeBroker.",
+        "Args": "Required"
+    },
+    {
+        "PID": "3608",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6644",
+        "Process": "SkypeApp.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5656",
+        "Process": "RuntimeBroker.",
+        "Args": "Required"
+    },
+    {
+        "PID": "8952",
+        "Process": "TextInputHost.",
+        "Args": "\"C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe\""
+    },
+    {
+        "PID": "5808",
+        "Process": "HxTsr.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "2388",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6292",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "3876",
+        "Process": "taskhostw.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "372",
+        "Process": "SkypeBackgroun",
+        "Args": "Required"
+    },
+    {
+        "PID": "1120",
+        "Process": "MsMpEng.exe"
+    },
+    {
+        "PID": "6076",
+        "Process": "ShellExperienc",
+        "Args": "Process"
+    },
+    {
+        "PID": "7336",
+        "Process": "RuntimeBroker.",
+        "Args": "Required"
+    },
+    {
+        "PID": "7964",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6544",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5964",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "8896",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5156",
+        "Process": "msedge.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5896",
+        "Process": "oneetx.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "7732",
+        "Process": "rundll32.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "6324",
+        "Process": "audiodg.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "2228",
+        "Process": "FTK",
+        "Args": "Imager.exe"
+    },
+    {
+        "PID": "5636",
+        "Process": "notepad.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "2044",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\system32\\svchost.exe"
+    },
+    {
+        "PID": "8708",
+        "Process": "svchost.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "5476",
+        "Process": "svchost.exe",
+        "Args": "C:\\Windows\\System32\\svchost.exe"
+    },
+    {
+        "PID": "6596",
+        "Process": "TrustedInstall",
+        "Args": "Required"
+    },
+    {
+        "PID": "2332",
+        "Process": "TiWorker.exe",
+        "Args": "Required"
+    },
+    {
+        "PID": "4340",
+        "Process": "VSSVC.exe",
+        "Args": "C:\\Windows\\system32\\vssvc.exe"
+    },
+    {
+        "PID": "7540",
+        "Process": "smartscreen.ex",
+        "Args": "C:\\Windows\\System32\\smartscreen.exe"
+    },
+    {
+        "PID": "8920",
+        "Process": "FTK",
+        "Args": "Imager.exe"
+    },
+    {
+        "PID": "5480",
+        "Process": "oneetx.exe",
+        "Args": "Process"
+    }
+]
