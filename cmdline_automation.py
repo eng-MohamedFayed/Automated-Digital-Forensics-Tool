@@ -2,6 +2,8 @@ import subprocess
 import os
 import json
 
+#here is a new line
+
 # Define the commands to automate
 # here you will need to change the path to the volatility3 script to the path of your volatility3 script
 # and the path to the memory file to the path of your memory file
