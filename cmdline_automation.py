@@ -19,7 +19,7 @@ def run_volatility_command(command_name, command, output_dir):
     output_file = os.path.join(output_dir, f"{command_name}.json")
     try:
         print(f"Running: {command_name}")
-        result = subprocess.run(command, text=True, capture_output=True)
+        result = subprocess.run(command, text=True, capture_output=True,shell=True)
         output_lines = result.stdout.splitlines()
 
         if len(output_lines) < 3:
@@ -29,9 +29,9 @@ def run_volatility_command(command_name, command, output_dir):
         headers = output_lines[2].split()
         data = []
         for line in output_lines[3:]:
-            values = line.split(maxsplit=len(headers) - 1)
+            values = line.split()
             entry = dict(zip(headers, values))
-            if entry:
+            if entry != {}:
                 data.append(entry)
 
         with open(output_file, "w") as outfile:
@@ -74,6 +74,7 @@ def load_malfind_entries(malfind_json_path, output_path):
     print(f"Filtered malfind data saved to {output_path}")
     return valid_entries
 
+
 def dump_memory(entry, dump_dir, volatility_path, memory_image):
     """
     Dump memory for a given entry using Volatility.
@@ -93,15 +94,17 @@ def dump_memory(entry, dump_dir, volatility_path, memory_image):
         volatility_command = [
             "python", volatility_path,
             "-f", memory_image,
-            f"-o \"{dump_dir}\"",
+            "-o", dump_dir,
             "windows.dumpfiles.DumpFiles",
-            f"--pid={pid}"
+            "--pid", str(pid)
         ]
-        subprocess.run(volatility_command, check=True, text=True, capture_output=True)
-
+        #the check=True argument will raise an exception if the command fails
+        #shell=True is used to run the command in a new shell
+        run_volatility_command("dumpfiles", volatility_command, dump_dir)
         # Find dumped .exe file in dump_dir
         for file_name in os.listdir(dump_dir):
-            if file_name.endswith(".exe"):
+            if file_name.endswith(".exe.img") or file_name.endswith(".dll.img"):
+                print(os.path.join(dump_dir, file_name))
                 return os.path.join(dump_dir, file_name)
 
     except subprocess.CalledProcessError as e:
@@ -163,9 +166,40 @@ def filter_netscan_output(netscan_json_path, output_path):
 
     print(f"Filtered netscan data with unique owners saved to {output_path}")
 
+def filter_user_assist(userassist_json_path, output_path):
+    """
+    Load and filter valid entries from the userassist JSON output and save to a new file.
+
+    Args:
+        userassist_json_path (str): Path to the userassist output JSON file.
+        output_path (str): Path to save the filtered JSON file.
+
+    Returns:
+        list: Filtered list of valid entries.
+    """
+    with open(userassist_json_path, 'r') as f:
+        userassist_data = json.load(f)
+
+    valid_entries = []
+    for entry in userassist_data:
+        hive = entry.get("Hive")
+        offset = entry.get("Offset")
+
+        # Validate entry
+        if len(hive) > 2 or len(offset) > 2 or hive.startswith("\\\\") or offset.startswith("\\\\") or offset.startswith("0x"):
+            valid_entries.append(entry)
+
+    # Save filtered entries to a new JSON file
+    with open(output_path, 'w') as outfile:
+        json.dump(valid_entries, outfile, indent=4)
+
+    print(f"Filtered userassist data saved to {output_path}")
+
+
 def main():
-    memory_image = "D:\\Graduation project\\memdump\\MemoryDump.mem"
+    memory_image = "D:\\Graduation project\\memdump\\192-Reveal.dmp"
     volatility_path = "D:\\Graduation project\\volatility3\\vol.py"
+
     output_dir = os.path.join(os.getcwd(), "memory_analysis")
     vt_api_keys = ["api_key_1", "api_key_2", "api_key_3", "api_key_4", "api_key_5",
                    "api_key_6", "api_key_7", "api_key_8", "api_key_9", "api_key_10",
@@ -178,11 +212,11 @@ def main():
 
     # Run commands
     commands = {
-        # "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
+        "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
+        "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
+        "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
+        "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
         "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
-        # "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
-        # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
-        # "users": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
     }
 
     output_files = {}
@@ -195,10 +229,14 @@ def main():
         filtered_malfind_path = os.path.join(output_dir, "filtered_malfind.json")
         valid_entries = load_malfind_entries(malfind_json_path, filtered_malfind_path)
         dump_dir = os.path.join(output_dir, "dumped_memory")
+        print("dump_dir: ", dump_dir)
         os.makedirs(dump_dir, exist_ok=True)
 
         for entry in valid_entries:
-            dump_memory(entry, dump_dir, volatility_path, memory_image)
+            pid=entry.get("PID")
+            pid_path = os.path.join(dump_dir, f"PID_{pid}")
+            os.makedirs(pid_path, exist_ok=True)
+            dump_memory(entry, pid_path, volatility_path, memory_image) #capture el output hna ya negm, enta bt3ml return ll path bta3 el exe file el dumped
             # Uncomment to enable VirusTotal scanning
             # if dump_file_path and dump_file_path.endswith(".exe"):
             #     scan_file_with_virustotal(dump_file_path, vt_api_keys)
@@ -208,6 +246,12 @@ def main():
         netscan_json_path = output_files["netscan"]
         filtered_netscan_path = os.path.join(output_dir, "filtered_netscan.json")
         filter_netscan_output(netscan_json_path, filtered_netscan_path)
+
+    if output_files.get("userassist"):
+        userassist_json_path = output_files["userassist"]
+        filtered_userassist_path = os.path.join(output_dir, "filtered_userassist.json")
+        filter_user_assist(userassist_json_path, filtered_userassist_path)
+
 
     print("Automation complete. Results are saved in the memory_analysis directory.")
 
