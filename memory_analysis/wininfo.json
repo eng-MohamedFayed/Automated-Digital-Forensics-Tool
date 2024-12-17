@@ -1,0 +1,82 @@
+[
+    {
+        "Variable": "Kernel",
+        "Value": "Base"
+    },
+    {
+        "Variable": "DTB",
+        "Value": "0x1ad000"
+    },
+    {
+        "Variable": "Symbols",
+        "Value": "file:///D:/Forensics%20tools/volatility3/volatility3/symbols/windows/ntkrnlmp.pdb/68A17FAF3012B7846079AEECDBE0A583-1.json.xz"
+    },
+    {
+        "Variable": "Is64Bit",
+        "Value": "True"
+    },
+    {
+        "Variable": "IsPAE",
+        "Value": "False"
+    },
+    {
+        "Variable": "layer_name",
+        "Value": "0"
+    },
+    {
+        "Variable": "memory_layer",
+        "Value": "1"
+    },
+    {
+        "Variable": "KdVersionBlock",
+        "Value": "0xf80762e29398"
+    },
+    {
+        "Variable": "Major/Minor",
+        "Value": "15.19041"
+    },
+    {
+        "Variable": "MachineType",
+        "Value": "34404"
+    },
+    {
+        "Variable": "KeNumberProcessors",
+        "Value": "4"
+    },
+    {
+        "Variable": "SystemTime",
+        "Value": "2023-05-21"
+    },
+    {
+        "Variable": "NtSystemRoot",
+        "Value": "C:\\Windows"
+    },
+    {
+        "Variable": "NtProductType",
+        "Value": "NtProductWinNt"
+    },
+    {
+        "Variable": "NtMajorVersion",
+        "Value": "10"
+    },
+    {
+        "Variable": "NtMinorVersion",
+        "Value": "0"
+    },
+    {
+        "Variable": "PE",
+        "Value": "MajorOperatingSystemVersion"
+    },
+    {
+        "Variable": "PE",
+        "Value": "MinorOperatingSystemVersion"
+    },
+    {
+        "Variable": "PE",
+        "Value": "Machine"
+    },
+    {
+        "Variable": "PE",
+        "Value": "TimeDateStamp"
+    }
+]
