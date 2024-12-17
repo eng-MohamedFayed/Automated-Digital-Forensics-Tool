@@ -1,0 +1,884 @@
+{
+    "UniqueOwners": [
+        {
+            "Owner": "System",
+            "PID": "4"
+        },
+        {
+            "Owner": "2024-07-15",
+            "PID": "SkypeApp.exe"
+        },
+        {
+            "Owner": "spoolsv.exe",
+            "PID": "1864"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "872"
+        },
+        {
+            "Owner": "SkypeApp.exe",
+            "PID": "7176"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1112"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "656"
+        },
+        {
+            "Owner": "smartscreen.ex",
+            "PID": "2820"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "440"
+        },
+        {
+            "Owner": "2024-07-15",
+            "PID": "System"
+        },
+        {
+            "Owner": "lsass.exe",
+            "PID": "636"
+        },
+        {
+            "Owner": "SearchApp.exe",
+            "PID": "7160"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "6016"
+        },
+        {
+            "Owner": "services.exe",
+            "PID": "628"
+        },
+        {
+            "Owner": "net.exe",
+            "PID": "2416"
+        },
+        {
+            "Owner": "wininit.exe",
+            "PID": "492"
+        },
+        {
+            "Owner": "WWAHost.exe",
+            "PID": "6780"
+        },
+        {
+            "Owner": "2024-07-04",
+            "PID": "svchost.exe"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1260"
+        },
+        {
+            "Owner": "msedge.exe",
+            "PID": "5780"
+        },
+        {
+            "Owner": "2024-07-15",
+            "PID": "svchost.exe"
+        },
+        {
+            "Owner": "2024-07-15",
+            "PID": "msedge.exe"
+        },
+        {
+            "Owner": "thunderbird.ex",
+            "PID": "5364"
+        }
+    ],
+    "GroupedConnections": [
+        {
+            "Owner": "spoolsv.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49668",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49668",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "49668",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "svchost.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5040",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51035",
+                    "ForeignAddr": "196.204.4.8",
+                    "ForeignPort": "80",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49667",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "49667",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "7680",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "7680",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "135",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "135",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49666",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "49666",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "135",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49666",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49667",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51003",
+                    "ForeignAddr": "13.74.129.92",
+                    "ForeignPort": "443",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51004",
+                    "ForeignAddr": "23.44.141.39",
+                    "ForeignPort": "443",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51034",
+                    "ForeignAddr": "196.204.4.8",
+                    "ForeignPort": "80",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "services.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49670",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49670",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "49670",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "System",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "445",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "445",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "139",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "lsass.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49664",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49664",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "49664",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "wininit.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49665",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "LISTENING",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49665",
+                    "ForeignAddr": "0.0.0.0",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv6",
+                    "State": "LISTENING",
+                    "LocalAddr": "::",
+                    "LocalPort": "49665",
+                    "ForeignAddr": "::",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "2024-07-04",
+            "Connections": [
+                {
+                    "protocol": "UDPv4",
+                    "State": "440",
+                    "LocalAddr": "127.0.0.1",
+                    "LocalPort": "64467",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1112",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5050",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "thunderbird.ex",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "127.0.0.1",
+                    "LocalPort": "50184",
+                    "ForeignAddr": "127.0.0.1",
+                    "ForeignPort": "50185",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "127.0.0.1",
+                    "LocalPort": "50185",
+                    "ForeignAddr": "127.0.0.1",
+                    "ForeignPort": "50184",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "smartscreen.ex",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51037",
+                    "ForeignAddr": "191.237.206.80",
+                    "ForeignPort": "443",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "2024-07-15",
+            "Connections": [
+                {
+                    "protocol": "UDPv4",
+                    "State": "7176",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "61311",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "7176",
+                    "LocalAddr": "::",
+                    "LocalPort": "61311",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5488",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5488",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "5488",
+                    "LocalAddr": "::",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "4",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "137",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "1260",
+                    "LocalAddr": "::",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "4",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "138",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "5760",
+                    "LocalAddr": "fe80::48b8:bbd7:ee10:6873",
+                    "LocalPort": "1900",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "5760",
+                    "LocalAddr": "::1",
+                    "LocalPort": "1900",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5760",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "1900",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5760",
+                    "LocalAddr": "127.0.0.1",
+                    "LocalPort": "1900",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "5760",
+                    "LocalAddr": "fe80::48b8:bbd7:ee10:6873",
+                    "LocalPort": "56824",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "5760",
+                    "LocalAddr": "::1",
+                    "LocalPort": "56825",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5760",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "56826",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5760",
+                    "LocalAddr": "127.0.0.1",
+                    "LocalPort": "56827",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "1260",
+                    "LocalAddr": "::",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "1260",
+                    "LocalAddr": "::",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5355",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "1260",
+                    "LocalAddr": "::",
+                    "LocalPort": "5355",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5355",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5355",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "4",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "138",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "4",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "137",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "1260",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5355",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "1260",
+                    "LocalAddr": "::",
+                    "LocalPort": "5355",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5780",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "63862",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5488",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "5488",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "5488",
+                    "LocalAddr": "::",
+                    "LocalPort": "5353",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "WWAHost.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "49948",
+                    "ForeignAddr": "13.107.6.156",
+                    "ForeignPort": "443",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "49955",
+                    "ForeignAddr": "93.186.134.98",
+                    "ForeignPort": "443",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "msedge.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51031",
+                    "ForeignAddr": "20.93.72.182",
+                    "ForeignPort": "443",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51033",
+                    "ForeignAddr": "20.191.45.158",
+                    "ForeignPort": "443",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "net.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "ESTABLISHED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "51038",
+                    "ForeignAddr": "45.9.74.32",
+                    "ForeignPort": "8888",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "SkypeApp.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSE_WAIT",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "50539",
+                    "ForeignAddr": "192.229.221.95",
+                    "ForeignPort": "80",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "50559",
+                    "ForeignAddr": "20.42.73.26",
+                    "ForeignPort": "443",
+                    "pid": null
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "50538",
+                    "ForeignAddr": "13.107.42.16",
+                    "ForeignPort": "443",
+                    "pid": null
+                }
+            ]
+        },
+        {
+            "Owner": "SearchApp.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.19.150",
+                    "LocalPort": "50510",
+                    "ForeignAddr": "204.79.197.203",
+                    "ForeignPort": "443",
+                    "pid": null
+                }
+            ]
+        }
+    ]
+}
