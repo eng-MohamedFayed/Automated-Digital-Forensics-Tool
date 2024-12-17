@@ -1,0 +1,92 @@
+[
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e37b8e0",
+        "FileName": "AcLayers.dll",
+        "Result": "file.0xad818e37b8e0.0xad818ea09d00.ImageSectionObject.AcLayers.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818da36c30",
+        "FileName": "oneetx.exe",
+        "Result": "file.0xad818da36c30.0xad818ca48660.ImageSectionObject.oneetx.exe.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e48a450",
+        "FileName": "sfc.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "DataSectionObject",
+        "FileObject": "0xad81876b7860",
+        "FileName": "R000000000006.clb",
+        "Result": "Error"
+    },
+    {
+        "Cache": "DataSectionObject",
+        "FileObject": "0xad8187a70b60",
+        "FileName": "cversions.2.db",
+        "Result": "file.0xad8187a70b60.0xad8187ba3070.DataSectionObject.cversions.2.db.dat"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad8189ce9740",
+        "FileName": "profapi.dll",
+        "Result": "file.0xad8189ce9740.0xad818c027ba0.ImageSectionObject.profapi.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818d44ca70",
+        "FileName": "IPHLPAPI.DLL",
+        "Result": "file.0xad818d44ca70.0xad818d33fcd0.ImageSectionObject.IPHLPAPI.DLL.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818f88a770",
+        "FileName": "OnDemandConnRouteHelper.dll",
+        "Result": "file.0xad818f88a770.0xad818e0c8d30.ImageSectionObject.OnDemandConnRouteHelper.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818c3c0a90",
+        "FileName": "winhttp.dll",
+        "Result": "file.0xad818c3c0a90.0xad818ce43a20.ImageSectionObject.winhttp.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818d43cee0",
+        "FileName": "HarddiskVolume31.1.mum",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818ef21130",
+        "FileName": "edputil.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e4849b0",
+        "FileName": "srvcli.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818ef239d0",
+        "FileName": "netutils.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e384bc0",
+        "FileName": "mpr.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861b3ce0",
+        "FileName": "msvcrt.dll",
+        "Result": "file.0xad81861b3ce0.0xad81863d0d60.ImageSectionObject.msvcrt.dll.img"
+    }
+]
