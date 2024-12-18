@@ -15,9 +15,49 @@ def parse_volatility_output(output_lines, command_name):
     Returns:
         list: List of dictionaries containing the parsed data.
     """
-    if command_name=="netscan":
-        headers = output_lines[2].split()
+    headers = output_lines[2].split()
+    data = []
+    
+    if command_name == "malfind":
         data = []
+        current_entry = None
+
+        for line in output_lines[4:]:
+            # Parse the metadata line
+            if line.split()[0].isdigit() and (len(line.split())==10 or len(line.split())==11) :  # Start of a new entry
+                if current_entry:  # Save the previous entry
+                    data.append(current_entry)
+                fields = line.split()
+                current_entry = {
+                    "PID": fields[0],
+                    "Process": fields[1],
+                    "Start VPN": fields[2],
+                    "End VPN": fields[3],
+                    "Tag": fields[4],
+                    "Protection": fields[5],
+                    "CommitCharge": fields[6],
+                    "PrivateMemory": fields[7],
+                    "File output": fields[8],
+                    "Notes": fields[9] + " " + fields[10] if len(fields) > 10 else fields[9],
+                    "Hexdump": [],
+                    "Disasm": []
+                }
+            elif current_entry is not None:
+                # Determine whether it's Hexdump or Disasm
+                if all(c in "0123456789abcdefABCDEF .-" for c in line.split()[0]):
+                    # Hexdump section
+                    current_entry["Hexdump"].append(line.strip())
+                elif ":" in line and line.split(":")[1].strip():
+                    # Disassembly section
+                    current_entry["Disasm"].append(line)
+
+        # Add the last entry
+        if current_entry:
+            data.append(current_entry)
+
+        return data
+    
+    elif command_name=="netscan":
         for line in output_lines[4:]:
             values = line.split()
             if (values[1] in ["UDPv4","UDPv6"]) and values!=[]:
@@ -27,14 +67,14 @@ def parse_volatility_output(output_lines, command_name):
             if entry != {}:
                 data.append(entry)
         return data
-    headers = output_lines[2].split()
-    data = []
-    for line in output_lines[4:]:
-        values = line.split()
-        entry = dict(zip(headers, values))
-        if entry != {}:
-            data.append(entry)
-    return data
+    
+    else:
+        for line in output_lines[4:]:
+            values = line.split()
+            entry = dict(zip(headers, values))
+            if entry != {}:
+                data.append(entry)
+        return data
 
 
 def run_volatility_command(command_name, command, output_dir):
@@ -69,37 +109,6 @@ def run_volatility_command(command_name, command, output_dir):
     except Exception as e:
         print(f"Error running {command_name}: {e}")
         return None
-
-def load_malfind_entries(malfind_json_path, output_path):
-    """
-    Load and filter valid entries from the malfind JSON output and save to a new file.
-
-    Args:
-        malfind_json_path (str): Path to the malfind output JSON file.
-        output_path (str): Path to save the filtered JSON file.
-
-    Returns:
-        list: Filtered list of valid entries.
-    """
-    with open(malfind_json_path, 'r') as f:
-        malfind_data = json.load(f)
-
-    valid_entries = []
-    for entry in malfind_data:
-        pid = entry.get("PID")
-        process_name = entry.get("Process")
-        start_address = entry.get("Start")
-
-        # Validate entry
-        if pid and pid.isdigit() and process_name and start_address and start_address.startswith("0x"):
-            valid_entries.append(entry)
-
-    # Save filtered entries to a new JSON file
-    with open(output_path, 'w') as outfile:
-        json.dump(valid_entries, outfile, indent=4)
-
-    print(f"Filtered malfind data saved to {output_path}")
-    return valid_entries
 
 
 def dump_memory(entry, dump_dir, volatility_path, memory_image):
@@ -295,12 +304,12 @@ def main():
 
     # Run commands
     commands = {
-        # "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
+        "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
         "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
-        # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
-        # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
-        # "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
-        # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
+        "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
+        "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
+        "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
+        "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
 
     }
 
@@ -311,12 +320,10 @@ def main():
     # Process malfind output
     if output_files.get("malfind"):
         malfind_json_path = output_files["malfind"]
-        filtered_malfind_path = os.path.join(output_dir, "filtered_malfind.json")
-        valid_entries = load_malfind_entries(malfind_json_path, filtered_malfind_path)
         dump_dir = os.path.join(output_dir, "dumped_memory")
-        # print("dump_dir: ", dump_dir)
         os.makedirs(dump_dir, exist_ok=True)
-
+        with open(malfind_json_path, 'r') as f:
+            valid_entries = json.load(f)
         for entry in valid_entries:
             pid=entry.get("PID")
             pid_path = os.path.join(dump_dir, f"PID_{pid}")

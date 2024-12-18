@@ -1,76 +1,16 @@
 {
     "UniqueOwners": [
         {
-            "Owner": "oneetx.exe",
-            "PID": "5896"
-        },
-        {
             "Owner": "svchost.exe",
-            "PID": "1196"
+            "PID": "5476"
         },
         {
             "Owner": "explorer.exe",
             "PID": "3580"
         },
         {
-            "Owner": "oneetx.exe",
-            "PID": "5480"
-        },
-        {
-            "Owner": "services.exe",
-            "PID": "676"
-        },
-        {
-            "Owner": "System",
-            "PID": "4"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "5964"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1012"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "3004"
-        },
-        {
-            "Owner": "SkypeApp.exe",
-            "PID": "6644"
-        },
-        {
-            "Owner": "SearchApp.exe",
-            "PID": "1916"
-        },
-        {
             "Owner": "wininit.exe",
             "PID": "552"
-        },
-        {
-            "Owner": "spoolsv.exe",
-            "PID": "1840"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "952"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "5476"
-        },
-        {
-            "Owner": "msedge.exe",
-            "PID": "5328"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "448"
-        },
-        {
-            "Owner": "tun2socks.exe",
-            "PID": "4628"
         },
         {
             "Owner": "lsass.exe",
@@ -78,11 +18,71 @@
         },
         {
             "Owner": "svchost.exe",
-            "PID": "1448"
+            "PID": "1012"
+        },
+        {
+            "Owner": "spoolsv.exe",
+            "PID": "1840"
+        },
+        {
+            "Owner": "tun2socks.exe",
+            "PID": "4628"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "952"
+        },
+        {
+            "Owner": "SkypeApp.exe",
+            "PID": "6644"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "5964"
+        },
+        {
+            "Owner": "services.exe",
+            "PID": "676"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1196"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "3004"
         },
         {
             "Owner": "-",
             "PID": "-"
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5480"
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5896"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1448"
+        },
+        {
+            "Owner": "msedge.exe",
+            "PID": "5328"
+        },
+        {
+            "Owner": "System",
+            "PID": "4"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "448"
+        },
+        {
+            "Owner": "SearchApp.exe",
+            "PID": "1916"
         }
     ],
     "GroupedConnections": [
