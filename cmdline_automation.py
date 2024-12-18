@@ -6,6 +6,7 @@ import requests
 import hashlib
 
 
+
 def run_volatility_command(command_name, command, output_dir):
     """
     Run a Volatility3 command and save its output as JSON.
@@ -75,6 +76,7 @@ def load_malfind_entries(malfind_json_path, output_path):
 
     print(f"Filtered malfind data saved to {output_path}")
     return valid_entries
+
 
 def dump_memory(entry, dump_dir, volatility_path, memory_image):
     """
@@ -164,6 +166,7 @@ def scan_file_with_virustotal(file_path, api_key, output_dir):
     # print("All API keys exhausted or rate limits reached.")
     return None
 
+
 def filter_netscan_output(netscan_json_path, output_path):
     """
     Filter the netscan JSON output to include unique owners and group connections under their respective owners.
@@ -172,6 +175,7 @@ def filter_netscan_output(netscan_json_path, output_path):
     Args:
         netscan_json_path (str): Path to the netscan output JSON file.
         output_path (str): Path to save the combined filtered JSON file.
+
     """
     with open(netscan_json_path, 'r') as f:
         netscan_data = json.load(f)
@@ -184,6 +188,7 @@ def filter_netscan_output(netscan_json_path, output_path):
 
     # Step 2: Group connections under their respective owners
     owner_connections = {}
+
     for entry in netscan_data:
         owner = entry.get("Owner", "Unknown")
         if owner not in owner_connections:
@@ -244,8 +249,10 @@ def filter_user_assist(userassist_json_path, output_path):
 
 
 def main():
+
     memory_image = "D:\\Graduation project\\memdump\\192-Reveal.dmp"
     volatility_path = "D:\\Graduation project\\volatility3\\vol.py"
+
 
     output_dir = os.path.join(os.getcwd(), "memory_analysis")
     vt_api_keys = ["4b22d28ee5ee3dc6ba8d7442e2d118f83e3d328a0fcbbb03e153d7a769ed3953"]
@@ -264,10 +271,12 @@ def main():
     commands = {
         "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
         "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
+
         # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
         # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
         # "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
         # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
+
     }
 
     output_files = {}

@@ -1,0 +1,11 @@
+{
+    "filename": "file.0xad818da36c30.0xad818ca48660.ImageSectionObject.oneetx.exe.img",
+    "full_path": "D:\\college\\GradProject\\106-RedLine\\Automated-Digital-Forensics-Tool\\memory_analysis\\dumped_memory\\PID_5896\\file.0xad818da36c30.0xad818ca48660.ImageSectionObject.oneetx.exe.img",
+    "md5": "f40168cc10f8cb6fe05322fc391e6947",
+    "sha256": "8d5d5bbdccb82a10ac28e2779ba0821f12da3e1f08f03ec467ce213a6fccf38c",
+    "file_size": 988672,
+    "virustotal_detected": 0,
+    "virustotal_total": 0,
+    "virustotal_scan_date": "N/A",
+    "malware_status": "Clean"
+}

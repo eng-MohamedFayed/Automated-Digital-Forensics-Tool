@@ -1,0 +1,25 @@
+[
+    {
+        "PID": "5896",
+        "Process": "oneetx.exe",
+        "Start": "0x400000",
+        "VPN": "PAGE_EXECUTE_READWRITE",
+        "End": "VadS",
+        "Tag": "56",
+        "Protection": "1",
+        "CommitCharge": "Disabled",
+        "PrivateMemory": "MZ",
+        "File": "header"
+    },
+    {
+        "PID": "7540",
+        "Process": "smartscreen.ex",
+        "Start": "0x2505c140000",
+        "VPN": "PAGE_EXECUTE_READWRITE",
+        "End": "VadS",
+        "Tag": "1",
+        "Protection": "1",
+        "CommitCharge": "Disabled",
+        "PrivateMemory": "N/A"
+    }
+]
