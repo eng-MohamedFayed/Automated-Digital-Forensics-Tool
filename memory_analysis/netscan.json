@@ -282,10 +282,10 @@
         "LocalPort": "138",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4",
-        "PID": "System",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "4",
+        "Owner": "System",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8187852250",
@@ -294,10 +294,10 @@
         "LocalPort": "137",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4",
-        "PID": "System",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "4",
+        "Owner": "System",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818902a5d0",
@@ -318,10 +318,10 @@
         "LocalPort": "56250",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "6644",
-        "PID": "SkypeApp.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:58:07.000000"
+        "State": "N/A",
+        "PID": "6644",
+        "Owner": "SkypeApp.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818971f870",
@@ -330,10 +330,10 @@
         "LocalPort": "56250",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "6644",
-        "PID": "SkypeApp.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:58:07.000000"
+        "State": "N/A",
+        "PID": "6644",
+        "Owner": "SkypeApp.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad81897eb010",
@@ -354,10 +354,10 @@
         "LocalPort": "57787",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:28:54.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad81898bc7f0",
@@ -366,10 +366,10 @@
         "LocalPort": "5355",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:57:37.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad81898bc7f0",
@@ -378,10 +378,10 @@
         "LocalPort": "5355",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:57:37.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8189a291b0",
@@ -474,10 +474,10 @@
         "LocalPort": "58844",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:51:53.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8189cea350",
@@ -486,10 +486,10 @@
         "LocalPort": "5050",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1196",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:30:27.000000"
+        "State": "N/A",
+        "PID": "1196",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818c17ada0",
@@ -498,10 +498,10 @@
         "LocalPort": "52051",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4628",
-        "PID": "tun2socks.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:24:14.000000"
+        "State": "N/A",
+        "PID": "4628",
+        "Owner": "tun2socks.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818c367b30",
@@ -522,10 +522,10 @@
         "LocalPort": "63218",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:39:15.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818c3b22e0",
@@ -534,10 +534,10 @@
         "LocalPort": "63218",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:39:15.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818d004ba0",
@@ -546,10 +546,10 @@
         "LocalPort": "63917",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:02:48.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818d004ba0",
@@ -558,10 +558,10 @@
         "LocalPort": "63917",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:02:48.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818d1bc010",
@@ -606,10 +606,10 @@
         "LocalPort": "500",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1ab50",
@@ -618,10 +618,10 @@
         "LocalPort": "4500",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1d8a0",
@@ -630,10 +630,10 @@
         "LocalPort": "4500",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1d8a0",
@@ -642,10 +642,10 @@
         "LocalPort": "4500",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1dbc0",
@@ -654,10 +654,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:57.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1dbc0",
@@ -666,10 +666,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:57.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1e520",
@@ -678,10 +678,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:57.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1f010",
@@ -690,10 +690,10 @@
         "LocalPort": "500",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da1f010",
@@ -702,10 +702,10 @@
         "LocalPort": "500",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:56.000000"
+        "State": "N/A",
+        "PID": "448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da202d0",
@@ -714,10 +714,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5964",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:57.000000"
+        "State": "N/A",
+        "PID": "5964",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da202d0",
@@ -726,10 +726,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5964",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:57.000000"
+        "State": "N/A",
+        "PID": "5964",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818da21bd0",
@@ -738,10 +738,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5964",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:27:57.000000"
+        "State": "N/A",
+        "PID": "5964",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818dbc1a60",
@@ -762,10 +762,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:32.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818dd07440",
@@ -774,10 +774,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:32.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818dd07440",
@@ -786,10 +786,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:32.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818de4aa20",
@@ -822,10 +822,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:05:24.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e3701a0",
@@ -834,10 +834,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:05:24.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e3701a0",
@@ -846,10 +846,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:05:24.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e370b00",
@@ -858,10 +858,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:05:24.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e371dc0",
@@ -870,10 +870,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:05:24.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e371dc0",
@@ -882,10 +882,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5328",
-        "PID": "msedge.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:05:24.000000"
+        "State": "N/A",
+        "PID": "5328",
+        "Owner": "msedge.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e3a1200",
@@ -894,10 +894,10 @@
         "LocalPort": "5355",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:57:37.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e4a6900",
@@ -906,10 +906,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5480",
-        "PID": "oneetx.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:39:47.000000"
+        "State": "N/A",
+        "PID": "5480",
+        "Owner": "oneetx.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e4a6900",
@@ -918,10 +918,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5480",
-        "PID": "oneetx.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:39:47.000000"
+        "State": "N/A",
+        "PID": "5480",
+        "Owner": "oneetx.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e4a9650",
@@ -930,10 +930,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "5480",
-        "PID": "oneetx.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:39:47.000000"
+        "State": "N/A",
+        "PID": "5480",
+        "Owner": "oneetx.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818e77da20",
@@ -954,10 +954,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef09b50",
@@ -966,10 +966,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef0b5e0",
@@ -978,10 +978,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef0ec90",
@@ -990,10 +990,10 @@
         "LocalPort": "55910",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef0f140",
@@ -1002,10 +1002,10 @@
         "LocalPort": "55911",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef0f2d0",
@@ -1014,10 +1014,10 @@
         "LocalPort": "55912",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef0fdc0",
@@ -1026,10 +1026,10 @@
         "LocalPort": "55913",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef10270",
@@ -1038,10 +1038,10 @@
         "LocalPort": "137",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4",
-        "PID": "System",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "4",
+        "Owner": "System",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef11530",
@@ -1050,10 +1050,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef116c0",
@@ -1062,10 +1062,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef11850",
@@ -1074,10 +1074,10 @@
         "LocalPort": "138",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4",
-        "PID": "System",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "4",
+        "Owner": "System",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef119e0",
@@ -1086,10 +1086,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef13150",
@@ -1098,10 +1098,10 @@
         "LocalPort": "55914",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef132e0",
@@ -1110,10 +1110,10 @@
         "LocalPort": "55915",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "22:40:16.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818ef77b40",
@@ -1134,10 +1134,10 @@
         "LocalPort": "5355",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:26.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818f88cc80",
@@ -1146,10 +1146,10 @@
         "LocalPort": "5355",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:26.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad818f894340",
@@ -1158,10 +1158,10 @@
         "LocalPort": "5355",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:26.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190dd8800",
@@ -1170,10 +1170,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:25.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190dd8800",
@@ -1182,10 +1182,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:25.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190dd8990",
@@ -1194,10 +1194,10 @@
         "LocalPort": "5353",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:25.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190dd97a0",
@@ -1206,10 +1206,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:25.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190dd97a0",
@@ -1218,10 +1218,10 @@
         "LocalPort": "0",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "1448",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:25.000000"
+        "State": "N/A",
+        "PID": "1448",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e12b10",
@@ -1230,10 +1230,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e161c0",
@@ -1242,10 +1242,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e16e40",
@@ -1254,10 +1254,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e19230",
@@ -1266,10 +1266,10 @@
         "LocalPort": "57094",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e1a1d0",
@@ -1278,10 +1278,10 @@
         "LocalPort": "57095",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e1a360",
@@ -1290,10 +1290,10 @@
         "LocalPort": "57096",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e1a680",
@@ -1302,10 +1302,10 @@
         "LocalPort": "1900",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e1acc0",
@@ -1314,10 +1314,10 @@
         "LocalPort": "57093",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "3004",
-        "PID": "svchost.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:01:29.000000"
+        "State": "N/A",
+        "PID": "3004",
+        "Owner": "svchost.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e59a60",
@@ -1326,10 +1326,10 @@
         "LocalPort": "55536",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4628",
-        "PID": "tun2socks.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:00:47.000000"
+        "State": "N/A",
+        "PID": "4628",
+        "Owner": "tun2socks.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e59d80",
@@ -1338,10 +1338,10 @@
         "LocalPort": "56228",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4628",
-        "PID": "tun2socks.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:00:38.000000"
+        "State": "N/A",
+        "PID": "4628",
+        "Owner": "tun2socks.exe",
+        "Created": "2023-05-21"
     },
     {
         "Offset": "0xad8190e5b040",
@@ -1350,9 +1350,9 @@
         "LocalPort": "49734",
         "ForeignAddr": "*",
         "ForeignPort": "0",
-        "State": "4628",
-        "PID": "tun2socks.exe",
-        "Owner": "2023-05-21",
-        "Created": "23:00:41.000000"
+        "State": "N/A",
+        "PID": "4628",
+        "Owner": "tun2socks.exe",
+        "Created": "2023-05-21"
     }
 ]

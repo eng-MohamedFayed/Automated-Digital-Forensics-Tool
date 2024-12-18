@@ -5,6 +5,36 @@ import requests
 # from itertools import cycle
 import hashlib
 
+def parse_volatility_output(output_lines, command_name):
+    """
+    Parse Volatility3 output and return the data as a list of dictionaries.
+
+    Args:
+        output_lines (list): List of lines from the Volatility3 output.
+
+    Returns:
+        list: List of dictionaries containing the parsed data.
+    """
+    if command_name=="netscan":
+        headers = output_lines[2].split()
+        data = []
+        for line in output_lines[4:]:
+            values = line.split()
+            if (values[1] in ["UDPv4","UDPv6"]) and values!=[]:
+                #to insert N/A in the empty field of state
+                values.insert(6, "N/A")
+            entry = dict(zip(headers, values))
+            if entry != {}:
+                data.append(entry)
+        return data
+    headers = output_lines[2].split()
+    data = []
+    for line in output_lines[4:]:
+        values = line.split()
+        entry = dict(zip(headers, values))
+        if entry != {}:
+            data.append(entry)
+    return data
 
 
 def run_volatility_command(command_name, command, output_dir):
@@ -29,13 +59,7 @@ def run_volatility_command(command_name, command, output_dir):
             print(f"No data returned for {command_name}.")
             return None
 
-        headers = output_lines[2].split()
-        data = []
-        for line in output_lines[3:]:
-            values = line.split()
-            entry = dict(zip(headers, values))
-            if entry != {}:
-                data.append(entry)
+        data = parse_volatility_output(output_lines, command_name)
 
         with open(output_file, "w") as outfile:
             json.dump(data, outfile, indent=4)
@@ -176,6 +200,8 @@ def filter_netscan_output(netscan_json_path, output_path):
         netscan_json_path (str): Path to the netscan output JSON file.
         output_path (str): Path to save the combined filtered JSON file.
 
+    returns:
+        dict: Combined JSON data containing unique owners and grouped connections.
     """
     with open(netscan_json_path, 'r') as f:
         netscan_data = json.load(f)
@@ -250,8 +276,8 @@ def filter_user_assist(userassist_json_path, output_path):
 
 def main():
 
-    memory_image = "D:\\Graduation project\\memdump\\192-Reveal.dmp"
-    volatility_path = "D:\\Graduation project\\volatility3\\vol.py"
+    memory_image = "D:\\college\\GradProject\\106-RedLine\\MemoryDump.mem"
+    volatility_path = "D:\\Forensics tools\\volatility3\\vol.py"
 
 
     output_dir = os.path.join(os.getcwd(), "memory_analysis")
@@ -271,11 +297,10 @@ def main():
     commands = {
         "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
         "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
-
-        # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
-        # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
-        # "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
-        # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
+        "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
+        "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
+        "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
+        "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
 
     }
 
