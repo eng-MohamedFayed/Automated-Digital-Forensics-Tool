@@ -226,7 +226,7 @@ def filter_netscan_output(netscan_json_path, output_path):
             "LocalPort": entry.get("LocalPort"),
             "ForeignAddr": entry.get("ForeignAddr"),
             "ForeignPort": entry.get("ForeignPort"),
-            "pid": entry.get("pid")
+            "pid": entry.get("PID")
         })
 
     grouped_connections_data = [{"Owner": owner, "Connections": connections} 
@@ -295,12 +295,12 @@ def main():
 
     # Run commands
     commands = {
-        "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
+        # "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
         "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
-        "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
-        "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
-        "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
-        "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
+        # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
+        # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
+        # "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
+        # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
 
     }
 
