@@ -1,9 +1,11 @@
 import json
 import os
 import subprocess
+from time import sleep
 import requests
 # from itertools import cycle
 import hashlib
+import re
 
 def parse_volatility_output(output_lines, command_name):
     """
@@ -68,6 +70,14 @@ def parse_volatility_output(output_lines, command_name):
                 data.append(entry)
         return data
     
+    # elif command_name=="pstree":
+    #     for line in output_lines[4:]:
+    #         values = re.split(r'\s+', line.split(" "))
+    #         entry = dict(zip(headers, values))
+    #         if entry != {}:
+    #             data.append(entry)
+    #     return data
+    
     else:
         for line in output_lines[4:]:
             values = line.split()
@@ -75,6 +85,7 @@ def parse_volatility_output(output_lines, command_name):
             if entry != {}:
                 data.append(entry)
         return data
+    
 
 
 def run_volatility_command(command_name, command, output_dir):
@@ -111,7 +122,7 @@ def run_volatility_command(command_name, command, output_dir):
         return None
 
 
-def dump_memory(entry, dump_dir, volatility_path, memory_image):
+def dump_memory(pid, dump_dir, volatility_path, memory_image):
     """
     Dump memory for a given entry using Volatility.
 
@@ -124,7 +135,6 @@ def dump_memory(entry, dump_dir, volatility_path, memory_image):
     Returns:
         str: Paths to the dumped .exe file, or None if dumping fails.
     """
-    pid = entry.get("PID")
 
     try:
         volatility_command = [
@@ -141,7 +151,7 @@ def dump_memory(entry, dump_dir, volatility_path, memory_image):
         paths=[]
         for file_name in os.listdir(dump_dir):
             # print("file_name: ", file_name)
-            if file_name.endswith(".exe.img"): #or file_name.endswith(".dll.img"):
+            if file_name.lower().endswith(".exe.img") or file_name.lower().endswith(".dll.img"):
                 # print(os.path.join(dump_dir, file_name))
                 paths.append(os.path.join(dump_dir, file_name))
         return paths
@@ -164,7 +174,7 @@ def scan_file_with_virustotal(file_path, api_key, output_dir):
     with open(file_path, 'rb') as file:
         try:
             data=file.read()
-            file_hash = {
+            file_data = {
                         'filename': os.path.basename(file_path),
                         'full_path': file_path,
                         'md5': hashlib.md5(data).hexdigest(),
@@ -173,26 +183,25 @@ def scan_file_with_virustotal(file_path, api_key, output_dir):
                     }
             response = requests.get(
                 "https://www.virustotal.com/vtapi/v2/file/report",
-                params={"apikey": api_key, "resource": file_hash} 
+                params={"apikey": api_key, "resource": file_data} 
             )
             if response.status_code == 200:
                 result = response.json()
-                file_hash['virustotal_detected'] = result.get('positives', 0)
-                file_hash['virustotal_total'] = result.get('total', 0)
-                file_hash['virustotal_scan_date'] = result.get('scan_date', 'N/A')
-                file_hash['malware_status'] = (
+                file_data['virustotal_detected'] = result.get('positives', 0)
+                file_data['virustotal_total'] = result.get('total', 0)
+                file_data['virustotal_scan_date'] = result.get('scan_date', 'N/A')
+                file_data['malware_status'] = (
                     'Malicious' if result.get('positives', 0) > 0 
                     else 'Clean'
                 )
-                results_file = os.path.join(output_dir, "virustotal_results.json")
-                with open(results_file , "w") as outfile:
-                    json.dump(file_hash , outfile, indent=4)
-                    outfile.write("\n")
-                print(f"VirusTotal results saved to {results_file}")
-            elif response.status_code == 429:
-                print("Rate limit reached for current API key. Switching to the next key.")
+                return file_data
+            elif response.status_code == 204:
+                # print("Rate limit reached for current API key. Switching to the next key.")
+                return {"error": "Rate limit reached"}
             else:
                 print(f"Error uploading {file_path}. Status code: {response.status_code}, Response: {response.text}")
+                return None    
+
         except Exception as e:
             print(f"Error checking {file_path} in VirusTotal: {e}")
 
@@ -288,15 +297,21 @@ def main():
     memory_image = "D:\\college\\GradProject\\106-RedLine\\MemoryDump.mem"
     volatility_path = "D:\\Forensics tools\\volatility3\\vol.py"
 
-
     output_dir = os.path.join(os.getcwd(), "memory_analysis")
-    vt_api_keys = ["4b22d28ee5ee3dc6ba8d7442e2d118f83e3d328a0fcbbb03e153d7a769ed3953"]
+    
+    # Load VirusTotal API keys
+    vt_api_keys = []
+    with open("vt_acconts.json", "r") as f:
+        vt_accounts = json.load(f)
+    for entry in vt_accounts:
+        api_key = entry.get("APIKEY")
+        if api_key != "":
+            vt_api_keys.append(api_key)
     vt_key_turn=0
     vt_key_use_counter=0
-    # vt_api_keys = ["api_key_1", "api_key_2", "api_key_3", "api_key_4", "api_key_5",
-    #                "api_key_6", "api_key_7", "api_key_8", "api_key_9", "api_key_10",
-    #                "api_key_11", "api_key_12", "api_key_13", "api_key_14", "api_key_15"]
+    vt_results = []
 
+    
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
 
@@ -305,12 +320,12 @@ def main():
     # Run commands
     commands = {
         "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
-        "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
-        "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
-        "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
+        # "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
+        # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
+        # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
         "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
-        "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
-
+        # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
+        # "pastree": ["python", volatility_path, "-f", memory_image, "windows.pstree.PsTree"],
     }
 
     output_files = {}
@@ -319,24 +334,48 @@ def main():
 
     # Process malfind output
     if output_files.get("malfind"):
-        malfind_json_path = output_files["malfind"]
         dump_dir = os.path.join(output_dir, "dumped_memory")
         os.makedirs(dump_dir, exist_ok=True)
+        
+        # Load malfind entries and pslist data
+        malfind_json_path = output_files["malfind"]
+        pslist_json_path = output_files["pslist"] if output_files.get("pslist") else None
         with open(malfind_json_path, 'r') as f:
             valid_entries = json.load(f)
+        if pslist_json_path:
+            with open(pslist_json_path, 'r') as f:
+                pslist_data = json.load(f)
+        else:
+            pslist_data = []
+                
+        # Find the child processes of the malfinded processes
+        pids_to_check=[]
         for entry in valid_entries:
-            pid=entry.get("PID")
+            pids_to_check.append(entry.get("PID"))
+            for process in pslist_data:
+                if process.get("PPID") in pids_to_check and process.get("PID") not in pids_to_check:
+                    pids_to_check.append(process.get("PID"))
+        print("PIDS to check: ", pids_to_check)
+        
+        # Dump memory for the targetted processes
+        for pid in pids_to_check:
             pid_path = os.path.join(dump_dir, f"PID_{pid}")
             os.makedirs(pid_path, exist_ok=True)
-            dump_file_paths= dump_memory(entry, pid_path, volatility_path, memory_image) #capture el output hna ya negm, enta bt3ml return ll path bta3 el exe file el dumped
-            # Uncomment to enable VirusTotal scanning
+            dump_file_paths= dump_memory(pid, pid_path, volatility_path, memory_image) 
             if dump_file_paths:
                 for path in dump_file_paths:
-                    scan_file_with_virustotal(path, vt_api_keys[vt_key_turn] , output_dir)
+                    result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn] , output_dir)
+                    while result=={"error": "Rate limit reached"}:
+                        print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
+                        sleep(15)                        
+                        result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn] , output_dir)
+                    vt_results.append(result)
                     vt_key_use_counter+=1
                     if vt_key_use_counter%4==0:
-                        key_turn+=1
-                        key_turn=key_turn%len(vt_api_keys)
+                        vt_key_turn+=1
+                        vt_key_turn=vt_key_turn%len(vt_api_keys)
+        with open(os.path.join(output_dir, "virustotal_results.json"), "w") as outfile:
+            json.dump(vt_results, outfile, indent=4)
 
     # Filter netscan output
     if output_files.get("netscan"):

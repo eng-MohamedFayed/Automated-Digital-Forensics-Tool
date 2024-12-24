@@ -1,0 +1,140 @@
+[
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e48a450",
+        "FileName": "sfc.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e37b8e0",
+        "FileName": "AcLayers.dll",
+        "Result": "file.0xad818e37b8e0.0xad818ea09d00.ImageSectionObject.AcLayers.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861b20c0",
+        "FileName": "msvcp_win.dll",
+        "Result": "file.0xad81861b20c0.0xad818618f010.ImageSectionObject.msvcp_win.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e384bc0",
+        "FileName": "mpr.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818e38b2e0",
+        "FileName": "clip64.dll",
+        "Result": "file.0xad818e38b2e0.0xad818c362710.ImageSectionObject.clip64.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818d43f780",
+        "FileName": "uxtheme.dll",
+        "Result": "file.0xad818d43f780.0xad818cf17a20.ImageSectionObject.uxtheme.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861b2bb0",
+        "FileName": "msctf.dll",
+        "Result": "file.0xad81861b2bb0.0xad818618e990.ImageSectionObject.msctf.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861b3ce0",
+        "FileName": "msvcrt.dll",
+        "Result": "file.0xad81861b3ce0.0xad81863d0d60.ImageSectionObject.msvcrt.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a9510",
+        "FileName": "user32.dll",
+        "Result": "file.0xad81861a9510.0xad81861917b0.ImageSectionObject.user32.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a99c0",
+        "FileName": "shlwapi.dll",
+        "Result": "file.0xad81861a99c0.0xad8186195750.ImageSectionObject.shlwapi.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a8ed0",
+        "FileName": "setupapi.dll",
+        "Result": "Error"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a9b50",
+        "FileName": "KernelBase.dll",
+        "Result": "file.0xad81861a9b50.0xad818618d010.ImageSectionObject.KernelBase.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a9e70",
+        "FileName": "sechost.dll",
+        "Result": "file.0xad81861a9e70.0xad8186195c10.ImageSectionObject.sechost.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a96a0",
+        "FileName": "gdi32full.dll",
+        "Result": "file.0xad81861a96a0.0xad8186191c70.ImageSectionObject.gdi32full.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a91f0",
+        "FileName": "ucrtbase.dll",
+        "Result": "file.0xad81861a91f0.0xad81863d4d60.ImageSectionObject.ucrtbase.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a8700",
+        "FileName": "imm32.dll",
+        "Result": "file.0xad81861a8700.0xad8186191a10.ImageSectionObject.imm32.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81863b6250",
+        "FileName": "win32u.dll",
+        "Result": "file.0xad81863b6250.0xad81863d6d60.ImageSectionObject.win32u.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a9ce0",
+        "FileName": "combase.dll",
+        "Result": "file.0xad81861a9ce0.0xad8186191050.ImageSectionObject.combase.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81861a9380",
+        "FileName": "cfgmgr32.dll",
+        "Result": "file.0xad81861a9380.0xad8186191550.ImageSectionObject.cfgmgr32.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81863b6890",
+        "FileName": "bcrypt.dll",
+        "Result": "file.0xad81863b6890.0xad8186128be0.ImageSectionObject.bcrypt.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad8186134250",
+        "FileName": "wow64cpu.dll",
+        "Result": "file.0xad8186134250.0xad818618a720.ImageSectionObject.wow64cpu.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad81863b7b50",
+        "FileName": "rpcrt4.dll",
+        "Result": "file.0xad81863b7b50.0xad818619cd30.ImageSectionObject.rpcrt4.dll.img"
+    },
+    {
+        "Cache": "ImageSectionObject",
+        "FileObject": "0xad818604f700",
+        "FileName": "wow64.dll",
+        "Result": "file.0xad818604f700.0xad81862c0740.ImageSectionObject.wow64.dll.img"
+    }
+]
