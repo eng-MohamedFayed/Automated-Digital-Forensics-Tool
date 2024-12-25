@@ -85,8 +85,6 @@ def parse_volatility_output(output_lines, command_name):
             if entry != {}:
                 data.append(entry)
         return data
-    
-
 
 def run_volatility_command(command_name, command, output_dir):
     """
@@ -120,7 +118,6 @@ def run_volatility_command(command_name, command, output_dir):
     except Exception as e:
         print(f"Error running {command_name}: {e}")
         return None
-
 
 def dump_memory(pid, dump_dir, volatility_path, memory_image):
     """
@@ -160,7 +157,7 @@ def dump_memory(pid, dump_dir, volatility_path, memory_image):
 
     return None
 
-def scan_file_with_virustotal(file_path, api_key, output_dir):
+def scan_file_with_virustotal(file_path, api_key):
     """
     Upload a file to VirusTotal for scanning and return the result as JSON.
 
@@ -182,8 +179,8 @@ def scan_file_with_virustotal(file_path, api_key, output_dir):
                         'file_size': os.path.getsize(file_path)
                     }
             response = requests.get(
-                "https://www.virustotal.com/vtapi/v2/file/report",
-                params={"apikey": api_key, "resource": file_data} 
+                f"https://www.virustotal.com/api/v3/files/{file_data['sha256']}",
+                headers={"x-apikey": api_key} 
             )
             if response.status_code == 200:
                 result = response.json()
@@ -195,7 +192,7 @@ def scan_file_with_virustotal(file_path, api_key, output_dir):
                     else 'Clean'
                 )
                 return file_data
-            elif response.status_code == 204:
+            elif response.status_code == 429:
                 # print("Rate limit reached for current API key. Switching to the next key.")
                 return {"error": "Rate limit reached"}
             else:
@@ -208,8 +205,58 @@ def scan_file_with_virustotal(file_path, api_key, output_dir):
     # print("All API keys exhausted or rate limits reached.")
     return None
 
+def scan_ip_with_virus_total(ip, api_key):
+    """
+    Check an IP address against VirusTotal's IP address database.
 
-def filter_netscan_output(netscan_json_path, output_path):
+    Args:
+        ip (str): IP address to check.
+        api_key (str): VirusTotal API key.
+
+    Returns:
+        dict: JSON response from VirusTotal.
+    """
+    try:
+        response = requests.get(
+            f"https://www.virustotal.com/api/v3/ip_addresses/{ip}",
+            headers={"x-apikey": api_key}
+        )
+        if response.status_code == 200:
+            results={}
+            result = response.json()
+            attributes = result.get("data", {}).get("attributes", {})
+            results["country"]=attributes.get("country")
+            results["asn"]=attributes.get("asn")
+            results["reputation"]=attributes.get("reputation")
+            results["tags"]=attributes.get("tags")
+            results["whois"]=attributes.get("whois")
+            last_analysis_results = attributes.get("last_analysis_results", {})
+            results["last_analysis_results"]={}
+            for engine, analysis in last_analysis_results.items():
+                if analysis.get("result")!="clean" and analysis.get("result")!="unrated":
+                    results["last_analysis_results"][engine]=analysis.get("result") 
+            last_analysis_stats = attributes.get("last_analysis_stats", "N/A")
+            if last_analysis_stats!="N/A":
+                results["malicious"]=last_analysis_stats.get("malicious")
+                results["suspicious"]=last_analysis_stats.get("suspicious")
+                results["undetected"]=last_analysis_stats.get("undetected")
+                results["harmless"]=last_analysis_stats.get("harmless")
+                results["timeout"]=last_analysis_stats.get("timeout")
+                if results["malicious"]>0 or results["suspicious"]>0:
+                    results["ISmalicious"]=True
+                else:
+                    results["ISmalicious"]=False
+            return results
+                    
+        elif response.status_code == 429:
+            print(f"Error checking {ip} in VirusTotal: {response.text}")
+            return {"error": "Rate limit reached"}
+    except Exception as e:
+        print(f"Error {ip} in VirusTotal: {e}")
+
+    return None
+
+def filter_netscan_output(netscan_json_path):
     """
     Filter the netscan JSON output to include unique owners and group connections under their respective owners.
     Stores both results in a single JSON file.
@@ -219,7 +266,7 @@ def filter_netscan_output(netscan_json_path, output_path):
         output_path (str): Path to save the combined filtered JSON file.
 
     returns:
-        dict: Combined JSON data containing unique owners and grouped connections.
+        dict: Combined JSON data containing unique owners and grouped connections, and a set of unique ForeignAddr.
     """
     with open(netscan_json_path, 'r') as f:
         netscan_data = json.load(f)
@@ -232,7 +279,8 @@ def filter_netscan_output(netscan_json_path, output_path):
 
     # Step 2: Group connections under their respective owners
     owner_connections = {}
-
+    foreign_addrs = set()  # Collect all unique ForeignAddr for scanning
+    
     for entry in netscan_data:
         owner = entry.get("Owner", "Unknown")
         if owner not in owner_connections:
@@ -246,6 +294,9 @@ def filter_netscan_output(netscan_json_path, output_path):
             "ForeignPort": entry.get("ForeignPort"),
             "pid": entry.get("PID")
         })
+        ip=entry.get("ForeignAddr")
+        if ip and ip!="*" and not re.match(r"^(::|0\.0\.0\.0|10\.|192\.168\.|172\.(1[6-9]|2[0-9]|3[0-1]))", ip):  # Collect ForeignAddr if present
+            foreign_addrs.add(ip)
 
     grouped_connections_data = [{"Owner": owner, "Connections": connections} 
                                 for owner, connections in owner_connections.items()]
@@ -256,11 +307,8 @@ def filter_netscan_output(netscan_json_path, output_path):
         "GroupedConnections": grouped_connections_data
     }
 
-    # Save the combined output
-    with open(output_path, 'w') as outfile:
-        json.dump(combined_data, outfile, indent=4)
-
-    print(f"Combined netscan data saved to {output_path}")
+    #return combined data and foreign addresses
+    return combined_data, foreign_addrs
 
 def filter_user_assist(userassist_json_path, output_path):
     """
@@ -291,7 +339,6 @@ def filter_user_assist(userassist_json_path, output_path):
 
     print(f"Filtered userassist data saved to {output_path}")
 
-
 def main():
 
     memory_image = "D:\\college\\GradProject\\106-RedLine\\MemoryDump.mem"
@@ -309,8 +356,8 @@ def main():
             vt_api_keys.append(api_key)
     vt_key_turn=0
     vt_key_use_counter=0
-    vt_results = []
-
+    vt_file_results = []
+    vt_ip_results = {}
     
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -319,11 +366,11 @@ def main():
 
     # Run commands
     commands = {
-        "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
-        # "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
+        # "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
+        "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
         # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
         # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
-        "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
+        # "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
         # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
         # "pastree": ["python", volatility_path, "-f", memory_image, "windows.pstree.PsTree"],
     }
@@ -369,25 +416,44 @@ def main():
                         print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
                         sleep(15)                        
                         result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn] , output_dir)
-                    vt_results.append(result)
+                    vt_file_results.append(result)
                     vt_key_use_counter+=1
                     if vt_key_use_counter%4==0:
                         vt_key_turn+=1
                         vt_key_turn=vt_key_turn%len(vt_api_keys)
         with open(os.path.join(output_dir, "virustotal_results.json"), "w") as outfile:
-            json.dump(vt_results, outfile, indent=4)
-
-    # Filter netscan output
+            json.dump(vt_file_results, outfile, indent=4)
+    
+    # uncomment the below line if you want to run the filter and scanning without running netscan command 
+    # output_files["netscan"]=os.path.join(output_dir, "netscan.json")
+    # Filter netscan output and scan foreign addresses using VT
     if output_files.get("netscan"):
         netscan_json_path = output_files["netscan"]
-        filtered_netscan_path = os.path.join(output_dir, "filtered_netscan.json")
-        filter_netscan_output(netscan_json_path, filtered_netscan_path)
+        filtered_netscan_path = os.path.join(output_dir, "filtered_netscan_with_IPcheck.json")
+        combined_data, foreign_addrs =filter_netscan_output(netscan_json_path)
+        for ip in foreign_addrs:
+            ip_result=scan_ip_with_virus_total(ip, vt_api_keys[vt_key_turn])
+            while ip_result=={"error": "Rate limit reached"}:
+                print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
+                sleep(15)
+                ip_result=scan_ip_with_virus_total(ip, vt_api_keys[vt_key_turn])
+            vt_ip_results[ip]=ip_result
+            vt_key_use_counter+=1
+            if vt_key_use_counter%4==0:
+                vt_key_turn+=1
+                vt_key_turn=vt_key_turn%len(vt_api_keys)
+        for group in combined_data.get("GroupedConnections", []):
+            for connection in group.get("Connections", []):
+                foreign_addr = connection.get("ForeignAddr")
+                if vt_ip_results.get(foreign_addr):
+                    connection["VT_Results"] = vt_ip_results[foreign_addr]
+        with open(filtered_netscan_path, "w") as outfile:
+            json.dump(combined_data, outfile, indent=4)
 
     if output_files.get("userassist"):
         userassist_json_path = output_files["userassist"]
         filtered_userassist_path = os.path.join(output_dir, "filtered_userassist.json")
         filter_user_assist(userassist_json_path, filtered_userassist_path)
-
 
     print("Automation complete. Results are saved in the memory_analysis directory.")
 

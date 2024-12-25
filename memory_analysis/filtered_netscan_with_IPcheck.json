@@ -2,43 +2,11 @@
     "UniqueOwners": [
         {
             "Owner": "svchost.exe",
-            "PID": "5476"
+            "PID": "3004"
         },
         {
-            "Owner": "explorer.exe",
-            "PID": "3580"
-        },
-        {
-            "Owner": "wininit.exe",
-            "PID": "552"
-        },
-        {
-            "Owner": "lsass.exe",
-            "PID": "696"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1012"
-        },
-        {
-            "Owner": "spoolsv.exe",
-            "PID": "1840"
-        },
-        {
-            "Owner": "tun2socks.exe",
-            "PID": "4628"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "952"
-        },
-        {
-            "Owner": "SkypeApp.exe",
-            "PID": "6644"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "5964"
+            "Owner": "-",
+            "PID": "-"
         },
         {
             "Owner": "services.exe",
@@ -49,28 +17,8 @@
             "PID": "1196"
         },
         {
-            "Owner": "svchost.exe",
-            "PID": "3004"
-        },
-        {
-            "Owner": "-",
-            "PID": "-"
-        },
-        {
-            "Owner": "oneetx.exe",
-            "PID": "5480"
-        },
-        {
-            "Owner": "oneetx.exe",
-            "PID": "5896"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1448"
-        },
-        {
-            "Owner": "msedge.exe",
-            "PID": "5328"
+            "Owner": "wininit.exe",
+            "PID": "552"
         },
         {
             "Owner": "System",
@@ -78,11 +26,63 @@
         },
         {
             "Owner": "svchost.exe",
-            "PID": "448"
+            "PID": "5476"
         },
         {
             "Owner": "SearchApp.exe",
             "PID": "1916"
+        },
+        {
+            "Owner": "spoolsv.exe",
+            "PID": "1840"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "952"
+        },
+        {
+            "Owner": "msedge.exe",
+            "PID": "5328"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1012"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1448"
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5896"
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5480"
+        },
+        {
+            "Owner": "SkypeApp.exe",
+            "PID": "6644"
+        },
+        {
+            "Owner": "lsass.exe",
+            "PID": "696"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "448"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "5964"
+        },
+        {
+            "Owner": "tun2socks.exe",
+            "PID": "4628"
+        },
+        {
+            "Owner": "explorer.exe",
+            "PID": "3580"
         }
     ],
     "GroupedConnections": [
@@ -236,7 +236,21 @@
                     "LocalPort": "55439",
                     "ForeignAddr": "20.22.207.36",
                     "ForeignPort": "443",
-                    "pid": "448"
+                    "pid": "448",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 8075,
+                        "reputation": 0,
+                        "tags": [],
+                        "whois": "NetRange: 20.0.0.0 - 20.31.255.255\nCIDR: 20.0.0.0/11\nNetName: MSFT\nNetHandle: NET-20-0-0-0-1\nParent: NET20 (NET-20-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: \nOrganization: Microsoft Corporation (MSFT)\nRegDate: 2017-10-18\nUpdated: 2021-12-14\nRef: https://rdap.arin.net/registry/ip/20.0.0.0\nOrgName: Microsoft Corporation\nOrgId: MSFT\nAddress: One Microsoft Way\nCity: Redmond\nStateProv: WA\nPostalCode: 98052\nCountry: US\nRegDate: 1998-07-10\nUpdated: 2024-03-18\nComment: To report suspected security issues specific to traffic emanating from Microsoft online services, including the distribution of malicious content or other illicit or illegal material through a Microsoft online service, please submit reports to:\r\nComment: * https://cert.microsoft.com. \r\nComment: \r\nComment: For SPAM and other abuse issues, such as Microsoft Accounts, please contact:\r\nComment: * abuse@microsoft.com. \r\nComment: \r\nComment: To report security vulnerabilities in Microsoft products and services, please contact:\r\nComment: * secure@microsoft.com. \r\nComment: \r\nComment: For legal and law enforcement-related requests, please contact:\r\nComment: * msndcc@microsoft.com\r\nComment: \r\nComment: For routing, peering or DNS issues, please \r\nComment: contact:\r\nComment: * IOC@microsoft.com\nRef: https://rdap.arin.net/registry/entity/MSFT\nOrgTechHandle: MRPD-ARIN\nOrgTechName: Microsoft Routing, Peering, and DNS\nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: IOC@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN\nOrgTechHandle: SINGH683-ARIN\nOrgTechName: Singh, Prachi \nOrgTechPhone: +1-425-707-5601 \nOrgTechEmail: pracsin@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SINGH683-ARIN\nOrgRoutingHandle: CHATU3-ARIN\nOrgRoutingName: Chaturmohta, Somesh \nOrgRoutingPhone: +1-425-882-8080 \nOrgRoutingEmail: someshch@microsoft.com\nOrgRoutingRef: https://rdap.arin.net/registry/entity/CHATU3-ARIN\nOrgTechHandle: KIMAV-ARIN\nOrgTechName: Kim, Avery \nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: averykim@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/KIMAV-ARIN\nOrgAbuseHandle: MAC74-ARIN\nOrgAbuseName: Microsoft Abuse Contact\nOrgAbusePhone: +1-425-882-8080 \nOrgAbuseEmail: abuse@microsoft.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN\nOrgTechHandle: BEDAR6-ARIN\nOrgTechName: Bedard, Dawn \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: dabedard@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/BEDAR6-ARIN\nOrgTechHandle: IPHOS5-ARIN\nOrgTechName: IPHostmaster, IPHostmaster \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: iphostmaster@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPHOS5-ARIN\n",
+                        "last_analysis_results": {},
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "undetected": 32,
+                        "harmless": 62,
+                        "timeout": 0,
+                        "ISmalicious": false
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -344,7 +358,21 @@
                     "LocalPort": "55460",
                     "ForeignAddr": "52.159.127.243",
                     "ForeignPort": "443",
-                    "pid": "448"
+                    "pid": "448",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 8075,
+                        "reputation": 0,
+                        "tags": [],
+                        "whois": "NetRange: 52.145.0.0 - 52.191.255.255\nCIDR: 52.145.0.0/16, 52.148.0.0/14, 52.146.0.0/15, 52.160.0.0/11, 52.152.0.0/13\nNetName: MSFT\nNetHandle: NET-52-145-0-0-1\nParent: NET52 (NET-52-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: \nOrganization: Microsoft Corporation (MSFT)\nRegDate: 2015-11-24\nUpdated: 2021-12-14\nRef: https://rdap.arin.net/registry/ip/52.145.0.0\nOrgName: Microsoft Corporation\nOrgId: MSFT\nAddress: One Microsoft Way\nCity: Redmond\nStateProv: WA\nPostalCode: 98052\nCountry: US\nRegDate: 1998-07-10\nUpdated: 2024-03-18\nComment: To report suspected security issues specific to traffic emanating from Microsoft online services, including the distribution of malicious content or other illicit or illegal material through a Microsoft online service, please submit reports to:\r\nComment: * https://cert.microsoft.com. \r\nComment: \r\nComment: For SPAM and other abuse issues, such as Microsoft Accounts, please contact:\r\nComment: * abuse@microsoft.com. \r\nComment: \r\nComment: To report security vulnerabilities in Microsoft products and services, please contact:\r\nComment: * secure@microsoft.com. \r\nComment: \r\nComment: For legal and law enforcement-related requests, please contact:\r\nComment: * msndcc@microsoft.com\r\nComment: \r\nComment: For routing, peering or DNS issues, please \r\nComment: contact:\r\nComment: * IOC@microsoft.com\nRef: https://rdap.arin.net/registry/entity/MSFT\nOrgAbuseHandle: MAC74-ARIN\nOrgAbuseName: Microsoft Abuse Contact\nOrgAbusePhone: +1-425-882-8080 \nOrgAbuseEmail: abuse@microsoft.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN\nOrgTechHandle: MRPD-ARIN\nOrgTechName: Microsoft Routing, Peering, and DNS\nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: IOC@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN\nOrgTechHandle: KIMAV-ARIN\nOrgTechName: Kim, Avery \nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: averykim@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/KIMAV-ARIN\nOrgRoutingHandle: CHATU3-ARIN\nOrgRoutingName: Chaturmohta, Somesh \nOrgRoutingPhone: +1-425-882-8080 \nOrgRoutingEmail: someshch@microsoft.com\nOrgRoutingRef: https://rdap.arin.net/registry/entity/CHATU3-ARIN\nOrgTechHandle: SINGH683-ARIN\nOrgTechName: Singh, Prachi \nOrgTechPhone: +1-425-707-5601 \nOrgTechEmail: pracsin@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SINGH683-ARIN\nOrgTechHandle: BEDAR6-ARIN\nOrgTechName: Bedard, Dawn \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: dabedard@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/BEDAR6-ARIN\nOrgTechHandle: IPHOS5-ARIN\nOrgTechName: IPHostmaster, IPHostmaster \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: iphostmaster@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPHOS5-ARIN\n",
+                        "last_analysis_results": {},
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "undetected": 32,
+                        "harmless": 62,
+                        "timeout": 0,
+                        "ISmalicious": false
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -886,7 +914,21 @@
                     "LocalPort": "55424",
                     "ForeignAddr": "52.182.143.208",
                     "ForeignPort": "443",
-                    "pid": "6644"
+                    "pid": "6644",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 8075,
+                        "reputation": 0,
+                        "tags": [],
+                        "whois": "NetRange: 52.145.0.0 - 52.191.255.255\nCIDR: 52.145.0.0/16, 52.148.0.0/14, 52.152.0.0/13, 52.160.0.0/11, 52.146.0.0/15\nNetName: MSFT\nNetHandle: NET-52-145-0-0-1\nParent: NET52 (NET-52-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: \nOrganization: Microsoft Corporation (MSFT)\nRegDate: 2015-11-24\nUpdated: 2021-12-14\nRef: https://rdap.arin.net/registry/ip/52.145.0.0\nOrgName: Microsoft Corporation\nOrgId: MSFT\nAddress: One Microsoft Way\nCity: Redmond\nStateProv: WA\nPostalCode: 98052\nCountry: US\nRegDate: 1998-07-10\nUpdated: 2024-03-18\nComment: To report suspected security issues specific to traffic emanating from Microsoft online services, including the distribution of malicious content or other illicit or illegal material through a Microsoft online service, please submit reports to:\r\nComment: * https://cert.microsoft.com. \r\nComment: \r\nComment: For SPAM and other abuse issues, such as Microsoft Accounts, please contact:\r\nComment: * abuse@microsoft.com. \r\nComment: \r\nComment: To report security vulnerabilities in Microsoft products and services, please contact:\r\nComment: * secure@microsoft.com. \r\nComment: \r\nComment: For legal and law enforcement-related requests, please contact:\r\nComment: * msndcc@microsoft.com\r\nComment: \r\nComment: For routing, peering or DNS issues, please \r\nComment: contact:\r\nComment: * IOC@microsoft.com\nRef: https://rdap.arin.net/registry/entity/MSFT\nOrgTechHandle: BEDAR6-ARIN\nOrgTechName: Bedard, Dawn \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: dabedard@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/BEDAR6-ARIN\nOrgRoutingHandle: CHATU3-ARIN\nOrgRoutingName: Chaturmohta, Somesh \nOrgRoutingPhone: +1-425-882-8080 \nOrgRoutingEmail: someshch@microsoft.com\nOrgRoutingRef: https://rdap.arin.net/registry/entity/CHATU3-ARIN\nOrgAbuseHandle: MAC74-ARIN\nOrgAbuseName: Microsoft Abuse Contact\nOrgAbusePhone: +1-425-882-8080 \nOrgAbuseEmail: abuse@microsoft.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN\nOrgTechHandle: IPHOS5-ARIN\nOrgTechName: IPHostmaster, IPHostmaster \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: iphostmaster@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPHOS5-ARIN\nOrgTechHandle: KIMAV-ARIN\nOrgTechName: Kim, Avery \nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: averykim@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/KIMAV-ARIN\nOrgTechHandle: MRPD-ARIN\nOrgTechName: Microsoft Routing, Peering, and DNS\nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: IOC@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN\nOrgTechHandle: SINGH683-ARIN\nOrgTechName: Singh, Prachi \nOrgTechPhone: +1-425-707-5601 \nOrgTechEmail: pracsin@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SINGH683-ARIN\n",
+                        "last_analysis_results": {},
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "undetected": 32,
+                        "harmless": 62,
+                        "timeout": 0,
+                        "ISmalicious": false
+                    }
                 }
             ]
         },
@@ -932,7 +974,24 @@
                     "LocalPort": "53660",
                     "ForeignAddr": "38.121.43.65",
                     "ForeignPort": "443",
-                    "pid": "4628"
+                    "pid": "4628",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 63023,
+                        "reputation": 0,
+                        "tags": [],
+                        "whois": "NetRange: 38.0.0.0 - 38.255.255.255\nCIDR: 38.0.0.0/8\nNetName: COGENT-A\nNetHandle: NET-38-0-0-0-1\nParent: ()\nNetType: Direct Allocation\nOriginAS: AS174\nOrganization: PSINet, Inc. (PSI)\nRegDate: 1991-04-16\nUpdated: 2023-10-11\nComment: IP allocations within 38.0.0.0/8 are used for Cogent customer static IP assignments.\nComment: \nComment: Reassignment information for this block can be found at rwhois.cogentco.com 4321\nComment: \nComment: Geofeed https://geofeed.cogentco.com/geofeed.csv\nRef: https://rdap.arin.net/registry/ip/38.0.0.0\nOrgName: PSINet, Inc.\nOrgId: PSI\nAddress: 2450 N Street NW\nCity: Washington\nStateProv: DC\nPostalCode: 20037\nCountry: US\nRegDate: \nUpdated: 2023-10-11\nComment: Geofeed https://geofeed.cogentco.com/geofeed.csv\nRef: https://rdap.arin.net/registry/entity/PSI\nReferralServer: rwhois://rwhois.cogentco.com:4321\nOrgAbuseHandle: COGEN-ARIN\nOrgAbuseName: Cogent Abuse\nOrgAbusePhone: +1-877-875-4311 \nOrgAbuseEmail: abuse@cogentco.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/COGEN-ARIN\nOrgNOCHandle: ZC108-ARIN\nOrgNOCName: Cogent Communications\nOrgNOCPhone: +1-877-875-4311 \nOrgNOCEmail: noc@cogentco.com\nOrgNOCRef: https://rdap.arin.net/registry/entity/ZC108-ARIN\nOrgTechHandle: IPALL-ARIN\nOrgTechName: IP Allocation\nOrgTechPhone: +1-877-875-4311 \nOrgTechEmail: ipalloc@cogentco.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPALL-ARIN\nRTechHandle: PSI-NISC-ARIN\nRTechName: IP Allocation\nRTechPhone: +1-877-875-4311 \nRTechEmail: ipalloc@cogentco.com\nRTechRef: https://rdap.arin.net/registry/entity/PSI-NISC-ARIN\n",
+                        "last_analysis_results": {
+                            "MalwareURL": "malware",
+                            "SOCRadar": "malicious"
+                        },
+                        "malicious": 2,
+                        "suspicious": 0,
+                        "undetected": 30,
+                        "harmless": 62,
+                        "timeout": 0,
+                        "ISmalicious": true
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -950,7 +1009,24 @@
                     "LocalPort": "55433",
                     "ForeignAddr": "38.121.43.65",
                     "ForeignPort": "443",
-                    "pid": "4628"
+                    "pid": "4628",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 63023,
+                        "reputation": 0,
+                        "tags": [],
+                        "whois": "NetRange: 38.0.0.0 - 38.255.255.255\nCIDR: 38.0.0.0/8\nNetName: COGENT-A\nNetHandle: NET-38-0-0-0-1\nParent: ()\nNetType: Direct Allocation\nOriginAS: AS174\nOrganization: PSINet, Inc. (PSI)\nRegDate: 1991-04-16\nUpdated: 2023-10-11\nComment: IP allocations within 38.0.0.0/8 are used for Cogent customer static IP assignments.\nComment: \nComment: Reassignment information for this block can be found at rwhois.cogentco.com 4321\nComment: \nComment: Geofeed https://geofeed.cogentco.com/geofeed.csv\nRef: https://rdap.arin.net/registry/ip/38.0.0.0\nOrgName: PSINet, Inc.\nOrgId: PSI\nAddress: 2450 N Street NW\nCity: Washington\nStateProv: DC\nPostalCode: 20037\nCountry: US\nRegDate: \nUpdated: 2023-10-11\nComment: Geofeed https://geofeed.cogentco.com/geofeed.csv\nRef: https://rdap.arin.net/registry/entity/PSI\nReferralServer: rwhois://rwhois.cogentco.com:4321\nOrgAbuseHandle: COGEN-ARIN\nOrgAbuseName: Cogent Abuse\nOrgAbusePhone: +1-877-875-4311 \nOrgAbuseEmail: abuse@cogentco.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/COGEN-ARIN\nOrgNOCHandle: ZC108-ARIN\nOrgNOCName: Cogent Communications\nOrgNOCPhone: +1-877-875-4311 \nOrgNOCEmail: noc@cogentco.com\nOrgNOCRef: https://rdap.arin.net/registry/entity/ZC108-ARIN\nOrgTechHandle: IPALL-ARIN\nOrgTechName: IP Allocation\nOrgTechPhone: +1-877-875-4311 \nOrgTechEmail: ipalloc@cogentco.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPALL-ARIN\nRTechHandle: PSI-NISC-ARIN\nRTechName: IP Allocation\nRTechPhone: +1-877-875-4311 \nRTechEmail: ipalloc@cogentco.com\nRTechRef: https://rdap.arin.net/registry/entity/PSI-NISC-ARIN\n",
+                        "last_analysis_results": {
+                            "MalwareURL": "malware",
+                            "SOCRadar": "malicious"
+                        },
+                        "malicious": 2,
+                        "suspicious": 0,
+                        "undetected": 30,
+                        "harmless": 62,
+                        "timeout": 0,
+                        "ISmalicious": true
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -1086,7 +1162,23 @@
                     "LocalPort": "49710",
                     "ForeignAddr": "204.79.197.203",
                     "ForeignPort": "443",
-                    "pid": "1916"
+                    "pid": "1916",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 8068,
+                        "reputation": -230,
+                        "tags": [],
+                        "whois": "NetRange: 204.79.195.0 - 204.79.197.255\nCIDR: 204.79.196.0/23, 204.79.195.0/24\nNetName: ECN-NETWORK\nNetHandle: NET-204-79-195-0-1\nParent: NET204 (NET-204-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: AS8075\nOrganization: Microsoft Corporation (MSFT)\nRegDate: 1994-12-15\nUpdated: 2021-12-14\nRef: https://rdap.arin.net/registry/ip/204.79.195.0\nOrgName: Microsoft Corporation\nOrgId: MSFT\nAddress: One Microsoft Way\nCity: Redmond\nStateProv: WA\nPostalCode: 98052\nCountry: US\nRegDate: 1998-07-10\nUpdated: 2024-03-18\nComment: To report suspected security issues specific to traffic emanating from Microsoft online services, including the distribution of malicious content or other illicit or illegal material through a Microsoft online service, please submit reports to:\r\nComment: * https://cert.microsoft.com. \r\nComment: \r\nComment: For SPAM and other abuse issues, such as Microsoft Accounts, please contact:\r\nComment: * abuse@microsoft.com. \r\nComment: \r\nComment: To report security vulnerabilities in Microsoft products and services, please contact:\r\nComment: * secure@microsoft.com. \r\nComment: \r\nComment: For legal and law enforcement-related requests, please contact:\r\nComment: * msndcc@microsoft.com\r\nComment: \r\nComment: For routing, peering or DNS issues, please \r\nComment: contact:\r\nComment: * IOC@microsoft.com\nRef: https://rdap.arin.net/registry/entity/MSFT\nOrgTechHandle: MRPD-ARIN\nOrgTechName: Microsoft Routing, Peering, and DNS\nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: IOC@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN\nOrgTechHandle: SINGH683-ARIN\nOrgTechName: Singh, Prachi \nOrgTechPhone: +1-425-707-5601 \nOrgTechEmail: pracsin@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SINGH683-ARIN\nOrgRoutingHandle: CHATU3-ARIN\nOrgRoutingName: Chaturmohta, Somesh \nOrgRoutingPhone: +1-425-882-8080 \nOrgRoutingEmail: someshch@microsoft.com\nOrgRoutingRef: https://rdap.arin.net/registry/entity/CHATU3-ARIN\nOrgTechHandle: KIMAV-ARIN\nOrgTechName: Kim, Avery \nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: averykim@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/KIMAV-ARIN\nOrgAbuseHandle: MAC74-ARIN\nOrgAbuseName: Microsoft Abuse Contact\nOrgAbusePhone: +1-425-882-8080 \nOrgAbuseEmail: abuse@microsoft.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN\nOrgTechHandle: IPHOS5-ARIN\nOrgTechName: IPHostmaster, IPHostmaster \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: iphostmaster@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPHOS5-ARIN\nOrgTechHandle: BEDAR6-ARIN\nOrgTechName: Bedard, Dawn \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: dabedard@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/BEDAR6-ARIN\n",
+                        "last_analysis_results": {
+                            "MalwareURL": "malware"
+                        },
+                        "malicious": 1,
+                        "suspicious": 0,
+                        "undetected": 29,
+                        "harmless": 64,
+                        "timeout": 0,
+                        "ISmalicious": true
+                    }
                 },
                 {
                     "protocol": "TCPv4",
@@ -1095,7 +1187,21 @@
                     "LocalPort": "49713",
                     "ForeignAddr": "104.119.188.96",
                     "ForeignPort": "443",
-                    "pid": "1916"
+                    "pid": "1916",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 20940,
+                        "reputation": 0,
+                        "tags": [],
+                        "whois": "NetRange: 104.64.0.0 - 104.127.255.255\nCIDR: 104.64.0.0/10\nNetName: AKAMAI\nNetHandle: NET-104-64-0-0-1\nParent: NET104 (NET-104-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: \nOrganization: Akamai Technologies, Inc. (AKAMAI)\nRegDate: 2014-04-22\nUpdated: 2014-04-22\nRef: https://rdap.arin.net/registry/ip/104.64.0.0\nOrgName: Akamai Technologies, Inc.\nOrgId: AKAMAI\nAddress: 145 Broadway\nCity: Cambridge\nStateProv: MA\nPostalCode: 02142\nCountry: US\nRegDate: 1999-01-21\nUpdated: 2023-10-24\nRef: https://rdap.arin.net/registry/entity/AKAMAI\nOrgTechHandle: IPADM11-ARIN\nOrgTechName: ipadmin\nOrgTechPhone: +1-617-444-0017 \nOrgTechEmail: ip-admin@akamai.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPADM11-ARIN\nOrgAbuseHandle: NUS-ARIN\nOrgAbuseName: NOC United States\nOrgAbusePhone: +1-617-444-2535 \nOrgAbuseEmail: abuse@akamai.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/NUS-ARIN\nOrgTechHandle: SJS98-ARIN\nOrgTechName: Schecter, Steven Jay\nOrgTechPhone: +1-617-274-7134 \nOrgTechEmail: ip-admin@akamai.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SJS98-ARIN\n",
+                        "last_analysis_results": {},
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "undetected": 94,
+                        "harmless": 0,
+                        "timeout": 0,
+                        "ISmalicious": false
+                    }
                 }
             ]
         },
@@ -1109,7 +1215,21 @@
                     "LocalPort": "53659",
                     "ForeignAddr": "204.79.197.237",
                     "ForeignPort": "443",
-                    "pid": "3580"
+                    "pid": "3580",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 8068,
+                        "reputation": -1,
+                        "tags": [],
+                        "whois": "NetRange: 204.79.195.0 - 204.79.197.255\nCIDR: 204.79.196.0/23, 204.79.195.0/24\nNetName: ECN-NETWORK\nNetHandle: NET-204-79-195-0-1\nParent: NET204 (NET-204-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: AS8075\nOrganization: Microsoft Corporation (MSFT)\nRegDate: 1994-12-15\nUpdated: 2021-12-14\nRef: https://rdap.arin.net/registry/ip/204.79.195.0\nOrgName: Microsoft Corporation\nOrgId: MSFT\nAddress: One Microsoft Way\nCity: Redmond\nStateProv: WA\nPostalCode: 98052\nCountry: US\nRegDate: 1998-07-10\nUpdated: 2024-03-18\nComment: To report suspected security issues specific to traffic emanating from Microsoft online services, including the distribution of malicious content or other illicit or illegal material through a Microsoft online service, please submit reports to:\r\nComment: * https://cert.microsoft.com. \r\nComment: \r\nComment: For SPAM and other abuse issues, such as Microsoft Accounts, please contact:\r\nComment: * abuse@microsoft.com. \r\nComment: \r\nComment: To report security vulnerabilities in Microsoft products and services, please contact:\r\nComment: * secure@microsoft.com. \r\nComment: \r\nComment: For legal and law enforcement-related requests, please contact:\r\nComment: * msndcc@microsoft.com\r\nComment: \r\nComment: For routing, peering or DNS issues, please \r\nComment: contact:\r\nComment: * IOC@microsoft.com\nRef: https://rdap.arin.net/registry/entity/MSFT\nOrgAbuseHandle: MAC74-ARIN\nOrgAbuseName: Microsoft Abuse Contact\nOrgAbusePhone: +1-425-882-8080 \nOrgAbuseEmail: abuse@microsoft.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN\nOrgRoutingHandle: CHATU3-ARIN\nOrgRoutingName: Chaturmohta, Somesh \nOrgRoutingPhone: +1-425-882-8080 \nOrgRoutingEmail: someshch@microsoft.com\nOrgRoutingRef: https://rdap.arin.net/registry/entity/CHATU3-ARIN\nOrgTechHandle: KIMAV-ARIN\nOrgTechName: Kim, Avery \nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: averykim@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/KIMAV-ARIN\nOrgTechHandle: SINGH683-ARIN\nOrgTechName: Singh, Prachi \nOrgTechPhone: +1-425-707-5601 \nOrgTechEmail: pracsin@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SINGH683-ARIN\nOrgTechHandle: MRPD-ARIN\nOrgTechName: Microsoft Routing, Peering, and DNS\nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: IOC@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN\nOrgTechHandle: BEDAR6-ARIN\nOrgTechName: Bedard, Dawn \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: dabedard@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/BEDAR6-ARIN\nOrgTechHandle: IPHOS5-ARIN\nOrgTechName: IPHostmaster, IPHostmaster \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: iphostmaster@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPHOS5-ARIN\n",
+                        "last_analysis_results": {},
+                        "malicious": 0,
+                        "suspicious": 0,
+                        "undetected": 31,
+                        "harmless": 63,
+                        "timeout": 0,
+                        "ISmalicious": false
+                    }
                 }
             ]
         },
@@ -1123,7 +1243,36 @@
                     "LocalPort": "55462",
                     "ForeignAddr": "77.91.124.20",
                     "ForeignPort": "80",
-                    "pid": "5896"
+                    "pid": "5896",
+                    "VT_Results": {
+                        "country": "DE",
+                        "asn": 215730,
+                        "reputation": -3,
+                        "tags": [],
+                        "whois": "inetnum: 77.91.124.0 - 77.91.124.255\ndescr: H2.NEXUS Frankfurt Network\nabuse-c: HL5106-RIPE\nremarks: H2.NEXUS Frankfurt Network\ngeofeed: https://h2.nexus/media/geofeed.csv\ngeoloc: 50.0379 8.5622\nnetname: H2NEXUS\ncountry: DE\nadmin-c: HL5106-RIPE\ntech-c: HL5106-RIPE\nstatus: SUB-ALLOCATED PA\nmnt-by: NEXUS-MNT\ncreated: 2024-07-11T20:06:15Z\nlast-modified: 2024-10-15T02:24:59Z\nsource: RIPE\nrole: H2NEXUS LTD\naddress: 71-75, Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ\nabuse-mailbox: abuse@h2.nexus\nnic-hdl: HL5106-RIPE\nmnt-by: NEXUS-MNT\ncreated: 2024-01-10T16:19:44Z\nlast-modified: 2024-09-10T21:41:50Z\nsource: RIPE # Filtered\nroute: 77.91.124.0/24\norigin: AS215730\nmnt-by: NEXUS-MNT\ncreated: 2024-07-23T20:34:47Z\nlast-modified: 2024-07-23T20:35:30Z\nsource: RIPE\n",
+                        "last_analysis_results": {
+                            "alphaMountain.ai": "phishing",
+                            "BitDefender": "malware",
+                            "CyRadar": "malicious",
+                            "Dr.Web": "malicious",
+                            "ESET": "suspicious",
+                            "Emsisoft": "malware",
+                            "Fortinet": "malware",
+                            "G-Data": "malware",
+                            "Kaspersky": "malware",
+                            "Lionic": "malicious",
+                            "MalwareURL": "malware",
+                            "SOCRadar": "malware",
+                            "VIPRE": "malware",
+                            "Webroot": "malicious"
+                        },
+                        "malicious": 13,
+                        "suspicious": 1,
+                        "undetected": 29,
+                        "harmless": 51,
+                        "timeout": 0,
+                        "ISmalicious": true
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -1164,7 +1313,25 @@
                     "LocalPort": "52434",
                     "ForeignAddr": "204.79.197.200",
                     "ForeignPort": "443",
-                    "pid": "-"
+                    "pid": "-",
+                    "VT_Results": {
+                        "country": "US",
+                        "asn": 8068,
+                        "reputation": -135,
+                        "tags": [],
+                        "whois": "NetRange: 204.79.195.0 - 204.79.197.255\nCIDR: 204.79.196.0/23, 204.79.195.0/24\nNetName: ECN-NETWORK\nNetHandle: NET-204-79-195-0-1\nParent: NET204 (NET-204-0-0-0-0)\nNetType: Direct Allocation\nOriginAS: AS8075\nOrganization: Microsoft Corporation (MSFT)\nRegDate: 1994-12-15\nUpdated: 2021-12-14\nRef: https://rdap.arin.net/registry/ip/204.79.195.0\nOrgName: Microsoft Corporation\nOrgId: MSFT\nAddress: One Microsoft Way\nCity: Redmond\nStateProv: WA\nPostalCode: 98052\nCountry: US\nRegDate: 1998-07-10\nUpdated: 2024-03-18\nComment: To report suspected security issues specific to traffic emanating from Microsoft online services, including the distribution of malicious content or other illicit or illegal material through a Microsoft online service, please submit reports to:\r\nComment: * https://cert.microsoft.com. \r\nComment: \r\nComment: For SPAM and other abuse issues, such as Microsoft Accounts, please contact:\r\nComment: * abuse@microsoft.com. \r\nComment: \r\nComment: To report security vulnerabilities in Microsoft products and services, please contact:\r\nComment: * secure@microsoft.com. \r\nComment: \r\nComment: For legal and law enforcement-related requests, please contact:\r\nComment: * msndcc@microsoft.com\r\nComment: \r\nComment: For routing, peering or DNS issues, please \r\nComment: contact:\r\nComment: * IOC@microsoft.com\nRef: https://rdap.arin.net/registry/entity/MSFT\nOrgTechHandle: BEDAR6-ARIN\nOrgTechName: Bedard, Dawn \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: dabedard@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/BEDAR6-ARIN\nOrgRoutingHandle: CHATU3-ARIN\nOrgRoutingName: Chaturmohta, Somesh \nOrgRoutingPhone: +1-425-882-8080 \nOrgRoutingEmail: someshch@microsoft.com\nOrgRoutingRef: https://rdap.arin.net/registry/entity/CHATU3-ARIN\nOrgAbuseHandle: MAC74-ARIN\nOrgAbuseName: Microsoft Abuse Contact\nOrgAbusePhone: +1-425-882-8080 \nOrgAbuseEmail: abuse@microsoft.com\nOrgAbuseRef: https://rdap.arin.net/registry/entity/MAC74-ARIN\nOrgTechHandle: IPHOS5-ARIN\nOrgTechName: IPHostmaster, IPHostmaster \nOrgTechPhone: +1-425-538-6637 \nOrgTechEmail: iphostmaster@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/IPHOS5-ARIN\nOrgTechHandle: KIMAV-ARIN\nOrgTechName: Kim, Avery \nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: averykim@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/KIMAV-ARIN\nOrgTechHandle: MRPD-ARIN\nOrgTechName: Microsoft Routing, Peering, and DNS\nOrgTechPhone: +1-425-882-8080 \nOrgTechEmail: IOC@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/MRPD-ARIN\nOrgTechHandle: SINGH683-ARIN\nOrgTechName: Singh, Prachi \nOrgTechPhone: +1-425-707-5601 \nOrgTechEmail: pracsin@microsoft.com\nOrgTechRef: https://rdap.arin.net/registry/entity/SINGH683-ARIN\n",
+                        "last_analysis_results": {
+                            "Criminal IP": "suspicious",
+                            "CRDF": "malicious",
+                            "MalwareURL": "malware"
+                        },
+                        "malicious": 2,
+                        "suspicious": 1,
+                        "undetected": 30,
+                        "harmless": 61,
+                        "timeout": 0,
+                        "ISmalicious": true
+                    }
                 }
             ]
         }
