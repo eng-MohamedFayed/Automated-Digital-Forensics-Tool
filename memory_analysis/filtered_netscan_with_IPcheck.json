@@ -2,71 +2,20 @@
     "UniqueOwners": [
         {
             "Owner": "svchost.exe",
-            "PID": "3004"
-        },
-        {
-            "Owner": "-",
-            "PID": "-"
-        },
-        {
-            "Owner": "services.exe",
-            "PID": "676"
+            "PID": "952"
         },
         {
             "Owner": "svchost.exe",
             "PID": "1196"
         },
         {
-            "Owner": "wininit.exe",
-            "PID": "552"
-        },
-        {
-            "Owner": "System",
-            "PID": "4"
+            "Owner": "SearchApp.exe",
+            "PID": "1916",
+            "Malicious_IP": "204.79.197.203"
         },
         {
             "Owner": "svchost.exe",
             "PID": "5476"
-        },
-        {
-            "Owner": "SearchApp.exe",
-            "PID": "1916"
-        },
-        {
-            "Owner": "spoolsv.exe",
-            "PID": "1840"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "952"
-        },
-        {
-            "Owner": "msedge.exe",
-            "PID": "5328"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1012"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1448"
-        },
-        {
-            "Owner": "oneetx.exe",
-            "PID": "5896"
-        },
-        {
-            "Owner": "oneetx.exe",
-            "PID": "5480"
-        },
-        {
-            "Owner": "SkypeApp.exe",
-            "PID": "6644"
-        },
-        {
-            "Owner": "lsass.exe",
-            "PID": "696"
         },
         {
             "Owner": "svchost.exe",
@@ -77,12 +26,67 @@
             "PID": "5964"
         },
         {
+            "Owner": "svchost.exe",
+            "PID": "3004"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1448"
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5480"
+        },
+        {
+            "Owner": "msedge.exe",
+            "PID": "5328"
+        },
+        {
+            "Owner": "services.exe",
+            "PID": "676"
+        },
+        {
+            "Owner": "System",
+            "PID": "4"
+        },
+        {
+            "Owner": "SkypeApp.exe",
+            "PID": "6644"
+        },
+        {
+            "Owner": "spoolsv.exe",
+            "PID": "1840"
+        },
+        {
+            "Owner": "lsass.exe",
+            "PID": "696"
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5896",
+            "Malicious_IP": "77.91.124.20"
+        },
+        {
             "Owner": "tun2socks.exe",
-            "PID": "4628"
+            "PID": "4628",
+            "Malicious_IP": "38.121.43.65"
         },
         {
             "Owner": "explorer.exe",
             "PID": "3580"
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1012"
+        },
+        {
+            "Owner": "wininit.exe",
+            "PID": "552"
+        },
+        {
+            "Owner": "-",
+            "PID": "-",
+            "Malicious_IP": "204.79.197.200"
         }
     ],
     "GroupedConnections": [

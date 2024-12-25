@@ -1,0 +1,1261 @@
+[
+    {
+        "Offset": "0x8a00b8e53e20",
+        "Type": "DRV",
+        "DriverName": "tap0901",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0x8a00b8e53e20",
+        "DriverName": "DEV",
+        "DeviceName": "tap0901",
+        "DriverNameOfAttDevice": "{2F0D7093-5232-429E-A46F-39398459BAD7}.tap",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818585f070",
+        "Type": "DRV",
+        "DriverName": "intelpep",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81858793d0",
+        "Type": "DRV",
+        "DriverName": "RAW",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81858793d0",
+        "DriverName": "DEV",
+        "DeviceName": "RAW",
+        "DriverNameOfAttDevice": "RawTape",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185885a90",
+        "Type": "DRV",
+        "DriverName": "SoftwareDevice",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185885a90",
+        "DriverName": "DEV",
+        "DeviceName": "SoftwareDevice",
+        "DriverNameOfAttDevice": "00000086",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185886ac0",
+        "Type": "DRV",
+        "DriverName": "DeviceApi",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185886ac0",
+        "DriverName": "DEV",
+        "DeviceName": "DeviceApi",
+        "DriverNameOfAttDevice": "DeviceApi",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185887e20",
+        "Type": "DRV",
+        "DriverName": "pcw",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185887e20",
+        "DriverName": "DEV",
+        "DeviceName": "pcw",
+        "DriverNameOfAttDevice": "PcwDrv",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818592ad30",
+        "Type": "DRV",
+        "DriverName": "ACPI_HAL",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818592ad30",
+        "DriverName": "DEV",
+        "DeviceName": "ACPI_HAL",
+        "DriverNameOfAttDevice": "00000011",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad818592ad30",
+        "DriverName": "ATT",
+        "DeviceName": "ACPI_HAL",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\ACPI"
+    },
+    {
+        "Offset": "0xad818592ece0",
+        "Type": "DRV",
+        "DriverName": "WMIxWDM",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818592ece0",
+        "DriverName": "DEV",
+        "DeviceName": "WMIxWDM",
+        "DriverNameOfAttDevice": "WMIDataDevice",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185930db0",
+        "Type": "DRV",
+        "DriverName": "CLFS",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185930db0",
+        "DriverName": "DEV",
+        "DeviceName": "CLFS",
+        "DriverNameOfAttDevice": "clfs",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185932e20",
+        "Type": "DRV",
+        "DriverName": "Wdf01000",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185932e20",
+        "DriverName": "DEV",
+        "DeviceName": "Wdf01000",
+        "DriverNameOfAttDevice": "KMDF0",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185937e30",
+        "Type": "DRV",
+        "DriverName": "monitor",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185937e30",
+        "DriverName": "DEV",
+        "DeviceName": "monitor",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818593fe30",
+        "Type": "DRV",
+        "DriverName": "HDAudBus",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818593fe30",
+        "DriverName": "DEV",
+        "DeviceName": "HDAudBus",
+        "DriverNameOfAttDevice": "00000073",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad818593fe30",
+        "DriverName": "ATT",
+        "DeviceName": "HDAudBus",
+        "DriverNameOfAttDevice": "00000074",
+        "DeviceType": "\\Driver\\HdAudAddService"
+    },
+    {
+        "Offset": "***",
+        "Type": "0xad818593fe30",
+        "DriverName": "ATT",
+        "DeviceName": "HDAudBus",
+        "DriverNameOfAttDevice": "00000075",
+        "DeviceType": "\\Driver\\ksthunk"
+    },
+    {
+        "Offset": "0xad81859570a0",
+        "Type": "DRV",
+        "DriverName": "PnpManager",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81859570a0",
+        "DriverName": "DEV",
+        "DeviceName": "PnpManager",
+        "DriverNameOfAttDevice": "00000010",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad81859570a0",
+        "DriverName": "ATT",
+        "DeviceName": "PnpManager",
+        "DriverNameOfAttDevice": "RdpBus",
+        "DeviceType": "\\Driver\\rdpbus"
+    },
+    {
+        "Offset": "0xad8185983070",
+        "Type": "DRV",
+        "DriverName": "CNG",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185983070",
+        "DriverName": "DEV",
+        "DeviceName": "CNG",
+        "DriverNameOfAttDevice": "CNG",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81859876d0",
+        "Type": "DRV",
+        "DriverName": "MsSecFlt",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81859876d0",
+        "DriverName": "DEV",
+        "DeviceName": "MsSecFlt",
+        "DriverNameOfAttDevice": "MSSECFLTSYS",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818598c070",
+        "Type": "DRV",
+        "DriverName": "SgrmAgent",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818598c070",
+        "DriverName": "DEV",
+        "DeviceName": "SgrmAgent",
+        "DriverNameOfAttDevice": "MSSGRMAGENTSYS",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81859a1e10",
+        "Type": "DRV",
+        "DriverName": "WindowsTrustedRT",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81859a1e10",
+        "DriverName": "DEV",
+        "DeviceName": "WindowsTrustedRT",
+        "DriverNameOfAttDevice": "WindowsTrustedRT",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81859baa90",
+        "Type": "DRV",
+        "DriverName": "ACPI",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81859baa90",
+        "DriverName": "DEV",
+        "DeviceName": "ACPI",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad81859baa90",
+        "DriverName": "ATT",
+        "DeviceName": "ACPI",
+        "DriverNameOfAttDevice": "RaidPort0",
+        "DeviceType": "\\Driver\\storahci"
+    },
+    {
+        "Offset": "0xad81859bf880",
+        "Type": "DRV",
+        "DriverName": "Telemetry",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81859bfca0",
+        "Type": "DRV",
+        "DriverName": "WindowsTrustedRTProxy",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185a76e00",
+        "Type": "DRV",
+        "DriverName": "acpiex",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185a76e00",
+        "DriverName": "DEV",
+        "DeviceName": "acpiex",
+        "DriverNameOfAttDevice": "RESOURCE_HUB",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185e73e30",
+        "Type": "DRV",
+        "DriverName": "WFPLWFS",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185e73e30",
+        "DriverName": "DEV",
+        "DeviceName": "WFPLWFS",
+        "DriverNameOfAttDevice": "WFPL2DPConfig",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185eab8f0",
+        "Type": "DRV",
+        "DriverName": "volume",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eab8f0",
+        "DriverName": "DEV",
+        "DeviceName": "volume",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185eab8f0",
+        "DriverName": "ATT",
+        "DeviceName": "volume",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\volsnap"
+    },
+    {
+        "Offset": "0xad8185eabb00",
+        "Type": "DRV",
+        "DriverName": "volsnap",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eabb00",
+        "DriverName": "DEV",
+        "DeviceName": "volsnap",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185eabd10",
+        "Type": "DRV",
+        "DriverName": "rdyboost",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eabd10",
+        "DriverName": "DEV",
+        "DeviceName": "rdyboost",
+        "DriverNameOfAttDevice": "RdyBoost",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185eac8f0",
+        "Type": "DRV",
+        "DriverName": "Mup",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eac8f0",
+        "DriverName": "DEV",
+        "DeviceName": "Mup",
+        "DriverNameOfAttDevice": "Mup",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185eac8f0",
+        "DriverName": "ATT",
+        "DeviceName": "Mup",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\FileSystem\\FltMgr"
+    },
+    {
+        "Offset": "0xad8185eaedc0",
+        "Type": "DRV",
+        "DriverName": "iorate",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eaedc0",
+        "DriverName": "DEV",
+        "DeviceName": "iorate",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185eaedc0",
+        "DriverName": "ATT",
+        "DeviceName": "iorate",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\volume"
+    },
+    {
+        "Offset": "***",
+        "Type": "0xad8185eaedc0",
+        "DriverName": "ATT",
+        "DeviceName": "iorate",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\volsnap"
+    },
+    {
+        "Offset": "0xad8185eb08f0",
+        "Type": "DRV",
+        "DriverName": "disk",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eb08f0",
+        "DriverName": "DEV",
+        "DeviceName": "disk",
+        "DriverNameOfAttDevice": "DR0",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185eb08f0",
+        "DriverName": "ATT",
+        "DeviceName": "disk",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\partmgr"
+    },
+    {
+        "Offset": "0xad8185eb2e00",
+        "Type": "DRV",
+        "DriverName": "Beep",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eb2e00",
+        "DriverName": "DEV",
+        "DeviceName": "Beep",
+        "DriverNameOfAttDevice": "Beep",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185ebbe00",
+        "Type": "DRV",
+        "DriverName": "Null",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185ebbe00",
+        "DriverName": "DEV",
+        "DeviceName": "Null",
+        "DriverNameOfAttDevice": "Null",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185ebce00",
+        "Type": "DRV",
+        "DriverName": "FileCrypt",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185ec8d10",
+        "Type": "DRV",
+        "DriverName": "fvevol",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185ec8d10",
+        "DriverName": "DEV",
+        "DeviceName": "fvevol",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185ec8d10",
+        "DriverName": "ATT",
+        "DeviceName": "fvevol",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\iorate"
+    },
+    {
+        "Offset": "***",
+        "Type": "0xad8185ec8d10",
+        "DriverName": "ATT",
+        "DeviceName": "fvevol",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\volume"
+    },
+    {
+        "Offset": "****",
+        "Type": "0xad8185ec8d10",
+        "DriverName": "ATT",
+        "DeviceName": "fvevol",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\volsnap"
+    },
+    {
+        "Offset": "0xad8185ee9870",
+        "Type": "DRV",
+        "DriverName": "kdnic",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185ee9870",
+        "DriverName": "DEV",
+        "DeviceName": "kdnic",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185eee350",
+        "Type": "DRV",
+        "DriverName": "usbehci",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185eee350",
+        "DriverName": "DEV",
+        "DeviceName": "usbehci",
+        "DriverNameOfAttDevice": "USBPDO-2",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185eee350",
+        "DriverName": "ATT",
+        "DeviceName": "usbehci",
+        "DriverNameOfAttDevice": "00000072",
+        "DeviceType": "\\Driver\\usbhub"
+    },
+    {
+        "Offset": "0xad8185f0c0a0",
+        "Type": "DRV",
+        "DriverName": "Psched",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185f0c0a0",
+        "DriverName": "DEV",
+        "DeviceName": "Psched",
+        "DriverNameOfAttDevice": "Psched",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185f0cc20",
+        "Type": "DRV",
+        "DriverName": "NetBIOS",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185f0cc20",
+        "DriverName": "DEV",
+        "DeviceName": "NetBIOS",
+        "DriverNameOfAttDevice": "Netbios",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185f0ce30",
+        "Type": "DRV",
+        "DriverName": "Vid",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185f0ce30",
+        "DriverName": "DEV",
+        "DeviceName": "Vid",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185f12420",
+        "Type": "DRV",
+        "DriverName": "bam",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185f12420",
+        "DriverName": "DEV",
+        "DeviceName": "bam",
+        "DriverNameOfAttDevice": "Bam",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185f13060",
+        "Type": "DRV",
+        "DriverName": "mssmbios",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185f13060",
+        "DriverName": "DEV",
+        "DeviceName": "mssmbios",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185f13bd0",
+        "Type": "DRV",
+        "DriverName": "GpuEnergyDrv",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185f13bd0",
+        "DriverName": "DEV",
+        "DeviceName": "GpuEnergyDrv",
+        "DriverNameOfAttDevice": "gpuenergydrv",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fae4b0",
+        "Type": "DRV",
+        "DriverName": "vm3dmp",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fae4b0",
+        "DriverName": "DEV",
+        "DeviceName": "vm3dmp",
+        "DriverNameOfAttDevice": "vm3dmpDevice",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fafa70",
+        "Type": "DRV",
+        "DriverName": "umbus",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fafa70",
+        "DriverName": "DEV",
+        "DeviceName": "umbus",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fb3e20",
+        "Type": "DRV",
+        "DriverName": "tap0901",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fb3e20",
+        "DriverName": "DEV",
+        "DeviceName": "tap0901",
+        "DriverNameOfAttDevice": "{2F0D7093-5232-429E-A46F-39398459BAD7}.tap",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fb6db0",
+        "Type": "DRV",
+        "DriverName": "i8042prt",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fb6db0",
+        "DriverName": "DEV",
+        "DeviceName": "i8042prt",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8185fb6db0",
+        "DriverName": "ATT",
+        "DeviceName": "i8042prt",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\vmmouse"
+    },
+    {
+        "Offset": "***",
+        "Type": "0xad8185fb6db0",
+        "DriverName": "ATT",
+        "DeviceName": "i8042prt",
+        "DriverNameOfAttDevice": "PointerClass0",
+        "DeviceType": "\\Driver\\mouclass"
+    },
+    {
+        "Offset": "0xad8185fd1c60",
+        "Type": "DRV",
+        "DriverName": "rdbss",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fd1c60",
+        "DriverName": "DEV",
+        "DeviceName": "rdbss",
+        "DriverNameOfAttDevice": "FsWrap",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fd3400",
+        "Type": "DRV",
+        "DriverName": "nsiproxy",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fd3400",
+        "DriverName": "DEV",
+        "DeviceName": "nsiproxy",
+        "DriverNameOfAttDevice": "Nsi",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fd3950",
+        "Type": "DRV",
+        "DriverName": "npsvctrig",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fe93a0",
+        "Type": "DRV",
+        "DriverName": "CSC",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fe93a0",
+        "DriverName": "DEV",
+        "DeviceName": "CSC",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8185fed5b0",
+        "Type": "DRV",
+        "DriverName": "vwififlt",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8185fed5b0",
+        "DriverName": "DEV",
+        "DeviceName": "vwififlt",
+        "DriverNameOfAttDevice": "vwififlt",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186059680",
+        "Type": "DRV",
+        "DriverName": "NdisCap",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186059700",
+        "Type": "DRV",
+        "DriverName": "-",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186059700",
+        "DriverName": "DEV",
+        "DeviceName": "-",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186059d50",
+        "Type": "DRV",
+        "DriverName": "fastfat",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186059d50",
+        "DriverName": "DEV",
+        "DeviceName": "fastfat",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8186059d50",
+        "DriverName": "ATT",
+        "DeviceName": "fastfat",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\FileSystem\\FltMgr"
+    },
+    {
+        "Offset": "0xad818605fba0",
+        "Type": "DRV",
+        "DriverName": "storqosflt",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818605fe20",
+        "Type": "DRV",
+        "DriverName": "cdrom",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818605fe20",
+        "DriverName": "DEV",
+        "DeviceName": "cdrom",
+        "DriverNameOfAttDevice": "CdRom0",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186081d40",
+        "Type": "DRV",
+        "DriverName": "BasicDisplay",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186081d40",
+        "DriverName": "DEV",
+        "DeviceName": "BasicDisplay",
+        "DriverNameOfAttDevice": "Video8",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186085e00",
+        "Type": "DRV",
+        "DriverName": "vmrawdsk",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186086e00",
+        "Type": "DRV",
+        "DriverName": "DXGKrnl",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186086e00",
+        "DriverName": "DEV",
+        "DeviceName": "DXGKrnl",
+        "DriverNameOfAttDevice": "DxgKrnl",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818608b790",
+        "Type": "DRV",
+        "DriverName": "CompositeBus",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818608b790",
+        "DriverName": "DEV",
+        "DeviceName": "CompositeBus",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186090bb0",
+        "Type": "DRV",
+        "DriverName": "vmusbmouse",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186090bb0",
+        "DriverName": "DEV",
+        "DeviceName": "vmusbmouse",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8186090bb0",
+        "DriverName": "ATT",
+        "DeviceName": "vmusbmouse",
+        "DriverNameOfAttDevice": "PointerClass1",
+        "DeviceType": "\\Driver\\mouclass"
+    },
+    {
+        "Offset": "0xad8186090e30",
+        "Type": "DRV",
+        "DriverName": "ahcache",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186090e30",
+        "DriverName": "DEV",
+        "DeviceName": "ahcache",
+        "DriverNameOfAttDevice": "ahcache",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186093e20",
+        "Type": "DRV",
+        "DriverName": "WscVReg",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186093e20",
+        "DriverName": "DEV",
+        "DeviceName": "WscVReg",
+        "DriverNameOfAttDevice": "VRegDriver",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186097e30",
+        "Type": "DRV",
+        "DriverName": "usbuhci",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186097e30",
+        "DriverName": "DEV",
+        "DeviceName": "usbuhci",
+        "DriverNameOfAttDevice": "USBPDO-1",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8186097e30",
+        "DriverName": "ATT",
+        "DeviceName": "usbuhci",
+        "DriverNameOfAttDevice": "00000071",
+        "DeviceType": "\\Driver\\usbhub"
+    },
+    {
+        "Offset": "0xad81860dda70",
+        "Type": "DRV",
+        "DriverName": "kbdclass",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81860dda70",
+        "DriverName": "DEV",
+        "DeviceName": "kbdclass",
+        "DriverNameOfAttDevice": "KeyboardClass0",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81860dfa70",
+        "Type": "DRV",
+        "DriverName": "vmmouse",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81860dfa70",
+        "DriverName": "DEV",
+        "DeviceName": "vmmouse",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad81860dfa70",
+        "DriverName": "ATT",
+        "DeviceName": "vmmouse",
+        "DriverNameOfAttDevice": "PointerClass0",
+        "DeviceType": "\\Driver\\mouclass"
+    },
+    {
+        "Offset": "0xad81860e0a70",
+        "Type": "DRV",
+        "DriverName": "mouclass",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81860e0a70",
+        "DriverName": "DEV",
+        "DeviceName": "mouclass",
+        "DriverNameOfAttDevice": "PointerClass2",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad81860e1e00",
+        "Type": "DRV",
+        "DriverName": "Serial",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81860e1e00",
+        "DriverName": "DEV",
+        "DeviceName": "Serial",
+        "DriverNameOfAttDevice": "Serial0",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad81860e1e00",
+        "DriverName": "ATT",
+        "DeviceName": "Serial",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "\\Driver\\Serenum"
+    },
+    {
+        "Offset": "0xad81860e2df0",
+        "Type": "DRV",
+        "DriverName": "vm3dmp_loader",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad81860e2df0",
+        "DriverName": "DEV",
+        "DeviceName": "vm3dmp_loader",
+        "DriverNameOfAttDevice": "Video7",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad8186105e30",
+        "Type": "DRV",
+        "DriverName": "usbccgp",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186105e30",
+        "DriverName": "DEV",
+        "DeviceName": "usbccgp",
+        "DriverNameOfAttDevice": "00000078",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8186105e30",
+        "DriverName": "ATT",
+        "DeviceName": "usbccgp",
+        "DriverNameOfAttDevice": "_HID00000001",
+        "DeviceType": "\\Driver\\HidUsb"
+    },
+    {
+        "Offset": "0xad8186145e50",
+        "Type": "DRV",
+        "DriverName": "mouhid",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad8186145e50",
+        "DriverName": "DEV",
+        "DeviceName": "mouhid",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "**",
+        "Type": "0xad8186145e50",
+        "DriverName": "ATT",
+        "DeviceName": "mouhid",
+        "DriverNameOfAttDevice": "PointerClass2",
+        "DeviceType": "\\Driver\\mouclass"
+    },
+    {
+        "Offset": "0xad81861d2e30",
+        "Type": "DRV",
+        "DriverName": "Win32k",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818626de30",
+        "Type": "DRV",
+        "DriverName": "Serenum",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*",
+        "Type": "0xad818626de30",
+        "DriverName": "DEV",
+        "DeviceName": "Serenum",
+        "DriverNameOfAttDevice": "-",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "0xad818626ee00",
+        "Type": "DRV",
+        "DriverName": "e1i65x64",
+        "DeviceName": "N/A",
+        "DriverNameOfAttDevice": "N/A",
+        "DeviceType": "N/A"
+    },
+    {
+        "Offset": "*"
+    }
+]

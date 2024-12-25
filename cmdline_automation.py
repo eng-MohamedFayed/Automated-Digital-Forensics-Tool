@@ -7,6 +7,32 @@ import requests
 import hashlib
 import re
 
+memory_image = "D:\\college\\GradProject\\106-RedLine\\MemoryDump.mem"
+volatility_path = "D:\\Forensics tools\\volatility3\\vol.py"
+output_dir = os.path.join(os.getcwd(), "memory_analysis")
+commands = {
+    "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
+    "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
+    "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
+    "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
+    "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
+    "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
+    "pastree": ["python", volatility_path, "-f", memory_image, "windows.pstree.PsTree"],
+}
+# Load VirusTotal API keys
+vt_api_keys = []
+with open("vt_acconts.json", "r") as f:
+    vt_accounts = json.load(f)
+for entry in vt_accounts:
+    api_key = entry.get("APIKEY")
+    if api_key != "":
+        vt_api_keys.append(api_key)
+vt_key_turn=0
+vt_key_use_counter=0
+vt_file_results = []
+vt_ip_results = {}
+
+
 def parse_volatility_output(output_lines, command_name):
     """
     Parse Volatility3 output and return the data as a list of dictionaries.
@@ -86,7 +112,7 @@ def parse_volatility_output(output_lines, command_name):
                 data.append(entry)
         return data
 
-def run_volatility_command(command_name, command, output_dir):
+def run_volatility_command(command_name, command, output_dir=output_dir):
     """
     Run a Volatility3 command and save its output as JSON.
 
@@ -114,12 +140,12 @@ def run_volatility_command(command_name, command, output_dir):
             json.dump(data, outfile, indent=4)
 
         print(f"Output saved to {output_file}")
-        return output_file
+        return output_file, data
     except Exception as e:
         print(f"Error running {command_name}: {e}")
         return None
 
-def dump_memory(pid, dump_dir, volatility_path, memory_image):
+def dump_memory(pid, dump_dir):
     """
     Dump memory for a given entry using Volatility.
 
@@ -151,6 +177,7 @@ def dump_memory(pid, dump_dir, volatility_path, memory_image):
             if file_name.lower().endswith(".exe.img") or file_name.lower().endswith(".dll.img"):
                 # print(os.path.join(dump_dir, file_name))
                 paths.append(os.path.join(dump_dir, file_name))
+                # print("paths: ", paths)
         return paths
     except subprocess.CalledProcessError as e:
         print(f"Failed to dump memory for PID {pid}: {e.stderr}")
@@ -179,7 +206,7 @@ def scan_file_with_virustotal(file_path, api_key):
                         'file_size': os.path.getsize(file_path)
                     }
             response = requests.get(
-                f"https://www.virustotal.com/api/v3/files/{file_data['sha256']}",
+                f"https://www.virustotal.com/api/v3/files/{file_data['md5']}",
                 headers={"x-apikey": api_key} 
             )
             if response.status_code == 200:
@@ -195,6 +222,23 @@ def scan_file_with_virustotal(file_path, api_key):
             elif response.status_code == 429:
                 # print("Rate limit reached for current API key. Switching to the next key.")
                 return {"error": "Rate limit reached"}
+            elif response.status_code == 404:
+                # File not found in VirusTotal, upload it
+                response = requests.post(
+                    "https://www.virustotal.com/api/v3/files",
+                    headers={"x-apikey": api_key},
+                    files={"file": (file_data['filename'], file)}
+                )
+                if response.status_code == 200:
+                    result = response.json()
+                    file_data['virustotal_detected'] = result.get('data', {}).get('attributes', {}).get('last_analysis_stats', {}).get('malicious', 0)
+                    file_data['virustotal_total'] = result.get('data', {}).get('attributes', {}).get('last_analysis_stats', {}).get('harmless', 0)
+                    file_data['virustotal_scan_date'] = result.get('data', {}).get('attributes', {}).get('last_analysis_date', 'N/A')
+                    file_data['malware_status'] = (
+                        'Malicious' if result.get('data', {}).get('attributes', {}).get('last_analysis_stats', {}).get('malicious', 0) > 0 
+                        else 'Clean'
+                    )
+                    return file_data
             else:
                 print(f"Error uploading {file_path}. Status code: {response.status_code}, Response: {response.text}")
                 return None    
@@ -339,122 +383,167 @@ def filter_user_assist(userassist_json_path, output_path):
 
     print(f"Filtered userassist data saved to {output_path}")
 
-def main():
-
-    memory_image = "D:\\college\\GradProject\\106-RedLine\\MemoryDump.mem"
-    volatility_path = "D:\\Forensics tools\\volatility3\\vol.py"
-
-    output_dir = os.path.join(os.getcwd(), "memory_analysis")
+def find_malicious_processes():
+    global vt_api_keys, vt_file_results, vt_ip_results, vt_key_use_counter, vt_key_turn, output_dir, commands
     
-    # Load VirusTotal API keys
-    vt_api_keys = []
-    with open("vt_acconts.json", "r") as f:
-        vt_accounts = json.load(f)
-    for entry in vt_accounts:
-        api_key = entry.get("APIKEY")
-        if api_key != "":
-            vt_api_keys.append(api_key)
-    vt_key_turn=0
-    vt_key_use_counter=0
-    vt_file_results = []
-    vt_ip_results = {}
+    _,malfind_data=run_volatility_command("malfind", commands["malfind"])
+    _,pslist_data=run_volatility_command("pslist", commands["pslist"])
+    
+    # Dump memory for malicious processes
+    dump_dir = os.path.join(output_dir, "dumped_memory")
+    os.makedirs(dump_dir, exist_ok=True)
+
+    pids_to_check=set()
+    for entry in malfind_data:
+        pids_to_check.add(entry.get("PID"))
+        for process in pslist_data:
+            if process.get("PPID") in pids_to_check and process.get("PID") not in pids_to_check:
+                pids_to_check.add(process.get("PID"))
+    # print("PIDs to check: ", pids_to_check)
+    for pid in pids_to_check:
+        pid_path = os.path.join(dump_dir, f"PID_{pid}")
+        os.makedirs(pid_path, exist_ok=True)
+        dump_file_paths= dump_memory(pid, pid_path) 
+        if dump_file_paths:
+            for path in dump_file_paths:
+                result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn])
+                while result=={"error": "Rate limit reached"}:
+                    print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
+                    sleep(15)                        
+                    result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn])
+                vt_file_results.append(result)
+                vt_key_use_counter+=1
+                if vt_key_use_counter%4==0:
+                    vt_key_turn+=1
+                    vt_key_turn=vt_key_turn%len(vt_api_keys)
+    with open(os.path.join(output_dir, "virustotal_results.json"), "w") as outfile:
+        json.dump(vt_file_results, outfile, indent=4)
+    
+    check_malicious_ips(output_dir, commands, vt_api_keys, vt_key_turn, vt_key_use_counter, vt_ip_results)
+        
+def check_malicious_ips(output_dir, commands, vt_api_keys, vt_key_turn, vt_key_use_counter, vt_ip_results):
+    """
+    Run netscan, filter its output to check for malicious IPs, and display their processes.
+
+    Args:
+        output_dir (str): Directory to save the output file.
+        commands (dict): Dictionary of Volatility commands.
+        vt_api_keys (list): List of VirusTotal API keys.
+        vt_key_turn (int): Index of the current VirusTotal API key.
+        vt_key_use_counter (int): Counter for the number of API key uses.
+        vt_ip_results (dict): Dictionary to store VirusTotal results for IPs.
+
+    Returns:
+        str: Path to the filtered netscan JSON file.
+    """
+    netscan_path, _ = run_volatility_command("netscan", commands["netscan"])
+    combined_data, foreign_addrs = filter_netscan_output(netscan_path)
+    filtered_netscan_path = os.path.join(output_dir, "filtered_netscan_with_IPcheck.json")
+
+    for ip in foreign_addrs:
+        ip_result = scan_ip_with_virus_total(ip, vt_api_keys[vt_key_turn])
+        while ip_result == {"error": "Rate limit reached"}:
+            print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
+            sleep(15)
+            ip_result = scan_ip_with_virus_total(ip, vt_api_keys[vt_key_turn])
+        vt_ip_results[ip] = ip_result
+        vt_key_use_counter += 1
+        if vt_key_use_counter % 4 == 0:
+            vt_key_turn += 1
+            vt_key_turn = vt_key_turn % len(vt_api_keys)
+
+    for group in combined_data.get("GroupedConnections", []):
+        for connection in group.get("Connections", []):
+            foreign_addr = connection.get("ForeignAddr")
+            pid = connection.get("pid")
+            if vt_ip_results.get(foreign_addr):
+                connection["VT_Results"] = vt_ip_results[foreign_addr]
+                if vt_ip_results[foreign_addr]["ISmalicious"]:
+                    for owner in combined_data.get("UniqueOwners", []):
+                        if owner.get("PID") == pid:
+                            owner["Malicious_IP"] = foreign_addr
+
+    with open(filtered_netscan_path, "w") as outfile:
+        json.dump(combined_data, outfile, indent=4)
+
+    return filtered_netscan_path
+
+def full_automation(memory_image, volatility_path, output_dir):
+    find_malicious_processes()  
+    userassist_path,_=run_volatility_command("userassist", commands["userassist"])
+    filtered_userassist_path = os.path.join(output_dir, "filtered_userassist.json")
+    filter_user_assist(userassist_path, filtered_userassist_path)
+    run_volatility_command("wininfo", commands["wininfo"])
+    run_volatility_command("cmdline", commands["cmdline"])
+    
+def main():
+    #make variables global
+    global vt_api_keys, vt_file_results, vt_ip_results, output_dir, volatility_path, memory_image, commands, vt_key_turn, vt_key_use_counter
     
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
 
     print("Starting Volatility 3 Automation...")
-
-    # Run commands
-    commands = {
-        # "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
-        "netscan": ["python", volatility_path, "-f", memory_image, "windows.netscan.NetScan"],
-        # "wininfo": ["python", volatility_path, "-f", memory_image, "windows.info.Info"],
-        # "userassist": ["python", volatility_path, "-f", memory_image, "windows.registry.userassist.UserAssist"],
-        # "malfind": ["python", volatility_path, "-f", memory_image, "windows.malfind.Malfind"],
-        # "cmdline": ["python", volatility_path, "-f", memory_image, "windows.cmdline.CmdLine"],
-        # "pastree": ["python", volatility_path, "-f", memory_image, "windows.pstree.PsTree"],
-    }
-
-    output_files = {}
-    for name, cmd in commands.items():
-        output_files[name] = run_volatility_command(name, cmd, output_dir)
-
-    # Process malfind output
-    if output_files.get("malfind"):
-        dump_dir = os.path.join(output_dir, "dumped_memory")
-        os.makedirs(dump_dir, exist_ok=True)
-        
-        # Load malfind entries and pslist data
-        malfind_json_path = output_files["malfind"]
-        pslist_json_path = output_files["pslist"] if output_files.get("pslist") else None
-        with open(malfind_json_path, 'r') as f:
-            valid_entries = json.load(f)
-        if pslist_json_path:
-            with open(pslist_json_path, 'r') as f:
-                pslist_data = json.load(f)
-        else:
-            pslist_data = []
-                
-        # Find the child processes of the malfinded processes
-        pids_to_check=[]
-        for entry in valid_entries:
-            pids_to_check.append(entry.get("PID"))
-            for process in pslist_data:
-                if process.get("PPID") in pids_to_check and process.get("PID") not in pids_to_check:
-                    pids_to_check.append(process.get("PID"))
-        print("PIDS to check: ", pids_to_check)
-        
-        # Dump memory for the targetted processes
-        for pid in pids_to_check:
-            pid_path = os.path.join(dump_dir, f"PID_{pid}")
-            os.makedirs(pid_path, exist_ok=True)
-            dump_file_paths= dump_memory(pid, pid_path, volatility_path, memory_image) 
-            if dump_file_paths:
-                for path in dump_file_paths:
-                    result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn] , output_dir)
-                    while result=={"error": "Rate limit reached"}:
-                        print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
-                        sleep(15)                        
-                        result=scan_file_with_virustotal(path, vt_api_keys[vt_key_turn] , output_dir)
-                    vt_file_results.append(result)
-                    vt_key_use_counter+=1
-                    if vt_key_use_counter%4==0:
-                        vt_key_turn+=1
-                        vt_key_turn=vt_key_turn%len(vt_api_keys)
-        with open(os.path.join(output_dir, "virustotal_results.json"), "w") as outfile:
-            json.dump(vt_file_results, outfile, indent=4)
-    
-    # uncomment the below line if you want to run the filter and scanning without running netscan command 
-    # output_files["netscan"]=os.path.join(output_dir, "netscan.json")
-    # Filter netscan output and scan foreign addresses using VT
-    if output_files.get("netscan"):
-        netscan_json_path = output_files["netscan"]
-        filtered_netscan_path = os.path.join(output_dir, "filtered_netscan_with_IPcheck.json")
-        combined_data, foreign_addrs =filter_netscan_output(netscan_json_path)
-        for ip in foreign_addrs:
-            ip_result=scan_ip_with_virus_total(ip, vt_api_keys[vt_key_turn])
-            while ip_result=={"error": "Rate limit reached"}:
-                print("Rate limit reached for all API keys. Waiting for 15 seconds to retry.")
-                sleep(15)
-                ip_result=scan_ip_with_virus_total(ip, vt_api_keys[vt_key_turn])
-            vt_ip_results[ip]=ip_result
-            vt_key_use_counter+=1
-            if vt_key_use_counter%4==0:
-                vt_key_turn+=1
-                vt_key_turn=vt_key_turn%len(vt_api_keys)
-        for group in combined_data.get("GroupedConnections", []):
-            for connection in group.get("Connections", []):
-                foreign_addr = connection.get("ForeignAddr")
-                if vt_ip_results.get(foreign_addr):
-                    connection["VT_Results"] = vt_ip_results[foreign_addr]
-        with open(filtered_netscan_path, "w") as outfile:
-            json.dump(combined_data, outfile, indent=4)
-
-    if output_files.get("userassist"):
-        userassist_json_path = output_files["userassist"]
-        filtered_userassist_path = os.path.join(output_dir, "filtered_userassist.json")
-        filter_user_assist(userassist_json_path, filtered_userassist_path)
-
+    while True:
+        print("choose the command you want to run:")
+        print("1- find malicious proceesses")
+        print("2- netowrk scan")
+        print("3- userassist")
+        print("4- full automation")
+        print("5- pick a specific command")
+        print("6- exit")
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            find_malicious_processes()
+        elif choice == "2":
+            check_malicious_ips(output_dir, commands, vt_api_keys, vt_key_turn, vt_key_use_counter, vt_ip_results)
+        elif choice == "3":
+            userassist_path,_=run_volatility_command("userassist", commands["userassist"])
+            filtered_userassist_path = os.path.join(output_dir, "filtered_userassist.json")
+            filter_user_assist(userassist_path, filtered_userassist_path)
+        elif choice == "4":
+            full_automation(memory_image, volatility_path, output_dir)
+        elif choice == "5":
+            while True:
+                print("choose the command you want to run:")
+                print("1- pslist")
+                print("2- netscan")
+                print("3- wininfo")
+                print("4- userassist")
+                print("5- malfind")
+                print("6- cmdline")
+                print("7- pastree")
+                print("8- enter profile manually")
+                print("9- back")
+                command_choice = input("Enter your choice: ")
+                if command_choice == "1":
+                    run_volatility_command("pslist", commands["pslist"])
+                elif command_choice == "2":
+                    check_malicious_ips(output_dir, commands, vt_api_keys, vt_key_turn, vt_key_use_counter, vt_ip_results)
+                elif command_choice == "3":
+                    run_volatility_command("wininfo", commands["wininfo"])
+                elif command_choice == "4":
+                    userassist_path,_=run_volatility_command("userassist", commands["userassist"])
+                    filtered_userassist_path = os.path.join(output_dir, "filtered_userassist.json")
+                    filter_user_assist(userassist_path, filtered_userassist_path)
+                elif command_choice == "5":
+                    run_volatility_command("malfind", commands["malfind"])
+                elif command_choice == "6":
+                    run_volatility_command("cmdline", commands["cmdline"])
+                elif command_choice == "7":
+                    run_volatility_command("pastree", commands["pastree"])
+                elif command_choice == "8":
+                    print("Enter the command you want to run, for example: pslist.PSList, netscan.NetScan, etc.")
+                    command_name = input("Enter the command name: ")
+                    command = input("Enter the command: ")
+                    run_volatility_command(command_name, ["python", volatility_path, "-f", memory_image, command])
+                elif command_choice == "9":
+                    break
+                else:
+                    print("Invalid choice. Please choose a valid option.")
+                    continue
+        elif choice == "6":
+            break     
     print("Automation complete. Results are saved in the memory_analysis directory.")
 
 if __name__ == "__main__":
