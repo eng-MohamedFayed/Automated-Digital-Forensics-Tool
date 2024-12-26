@@ -3,12 +3,62 @@ import os
 import subprocess
 from time import sleep
 import requests
-# from itertools import cycle
 import hashlib
 import re
+import sys
+import ctypes
+from tkinter import Tk, filedialog
 
-memory_image = "D:\\college\\GradProject\\106-RedLine\\MemoryDump.mem"
-volatility_path = "D:\\Forensics tools\\volatility3\\vol.py"
+# Ask the user how they want to acquire the memory dump
+Tk().withdraw()
+choice = input("Memory acquisition:\n1) Live acquisition\n2) Manual selection\nChoose (1/2): ")
+memory_image = None
+volatility_path = None
+while not memory_image:
+    if choice == "1":
+        try:
+            is_admin = bool(ctypes.windll.shell32.IsUserAnAdmin())
+        except:
+            is_admin = False
+
+        if not is_admin:
+            consent = input("Live acquisition requires admin privileges. Proceed? (y/n): ")
+            if consent.lower() == "y":
+                # Re-run script as admin
+                ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+                sys.exit(0)
+            else:
+                print("Live acquisition canceled.")
+                sys.exit(0)
+
+        print("Acquiring live memory image with winpmem...")
+        winpmem_path = r"winpmem_mini_x64_rc2.exe"  # Adjust path as needed
+        acquired_file = os.path.join(os.getcwd(), "live_memory_dump.mem")
+        subprocess.run([winpmem_path, acquired_file])
+        memory_image = acquired_file
+        print("Live memory acquired. Proceeding with the script...")
+        
+    else:
+        print("Select your memory dump file.")
+        memory_image = filedialog.askopenfilename(
+            title="Select Memory Dump File",
+            filetypes=[("Memory Dump Files","*.mem *.dmp *.bin"), ("All Files","*.*")]
+        )
+        if not memory_image:
+            print("No file selected. Please try again.")
+            continue
+        
+            
+while not volatility_path:
+    print("Select your Volatility path.")
+    volatility_path = filedialog.askopenfilename(
+        title="Select Volatility Script",
+        filetypes=[("Python Files","*.py"), ("All Files","*.*")]
+    )
+    if not volatility_path:
+        print("No file selected. Please try again.")
+        continue
+
 output_dir = os.path.join(os.getcwd(), "memory_analysis")
 commands = {
     "pslist": ["python", volatility_path, "-f", memory_image, "windows.pslist.PsList"],
