@@ -8,10 +8,9 @@
         "Handles": "-",
         "SessionId": "N/A",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:10.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:10.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "108",
@@ -22,10 +21,9 @@
         "Handles": "-",
         "SessionId": "N/A",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:26:54.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:26:54.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "332",
@@ -36,10 +34,9 @@
         "Handles": "-",
         "SessionId": "N/A",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:10.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:10.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "452",
@@ -50,10 +47,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:22.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:22.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "528",
@@ -64,10 +60,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:25.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:25.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "552",
@@ -78,10 +73,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:25.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:25.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "588",
@@ -92,10 +86,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:25.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:25.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "676",
@@ -106,10 +99,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:29.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:29.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "696",
@@ -120,10 +112,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:29.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:29.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "824",
@@ -134,10 +125,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:32.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:32.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "852",
@@ -148,10 +138,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:33.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:33.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "860",
@@ -162,10 +151,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:33.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:33.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "952",
@@ -176,10 +164,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:36.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:36.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1016",
@@ -190,10 +177,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:38.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:38.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "448",
@@ -204,10 +190,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:41.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:41.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "752",
@@ -218,10 +203,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:43.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:43.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1012",
@@ -232,10 +216,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:43.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:43.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1196",
@@ -246,10 +229,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:46.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:46.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1280",
@@ -260,10 +242,9 @@
         "Handles": "-",
         "SessionId": "N/A",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:49.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:49.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1376",
@@ -274,10 +255,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:49.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:49.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1448",
@@ -288,10 +268,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:52.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:52.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1496",
@@ -302,10 +281,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:52.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:52.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1644",
@@ -316,10 +294,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:58.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:58.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1652",
@@ -330,10 +307,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:58.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:58.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1840",
@@ -344,10 +320,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:03.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:03.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1892",
@@ -358,10 +333,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:05.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:05.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2024",
@@ -372,10 +346,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:11.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:11.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2076",
@@ -386,10 +359,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:19.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:19.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2144",
@@ -400,10 +372,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:19.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:19.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2152",
@@ -414,10 +385,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:19.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:19.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2200",
@@ -428,10 +398,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:19.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:19.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2404",
@@ -442,10 +411,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:32.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:32.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3028",
@@ -456,10 +424,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:29:20.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:29:20.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "832",
@@ -470,10 +437,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:29:25.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:29:25.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1232",
@@ -484,10 +450,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:29:39.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:29:39.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1392",
@@ -498,10 +463,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:08.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:08.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1064",
@@ -512,10 +476,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:09.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:09.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1600",
@@ -526,10 +489,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:09.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:09.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3204",
@@ -540,10 +502,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:11.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:11.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3556",
@@ -554,10 +515,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:28.000000",
-        "File": "UTC",
-        "output": "2023-05-21"
+        "CreateTime": "2023-05-21 22:30:28.000000 UTC",
+        "ExitTime": "2023-05-21",
+        "File output": "22:30:43.000000 UTC Disabled"
     },
     {
         "PID": "3580",
@@ -568,10 +528,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:28.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:28.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3944",
@@ -582,10 +541,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:44.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:44.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3004",
@@ -596,10 +554,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:55.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:55.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1116",
@@ -610,10 +567,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:00.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:00.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3160",
@@ -624,10 +580,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:21.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:21.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4116",
@@ -638,10 +593,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:24.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:24.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4228",
@@ -652,10 +606,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:27.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:27.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4448",
@@ -666,10 +619,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:33.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:33.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "464",
@@ -680,10 +632,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:59.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:59.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3252",
@@ -694,10 +645,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:59.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:59.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5136",
@@ -708,10 +658,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:01.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:01.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5328",
@@ -722,10 +671,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:02.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:02.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4396",
@@ -736,10 +684,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:19.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:19.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1144",
@@ -750,10 +697,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:38.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:38.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4544",
@@ -764,10 +710,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:39.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:39.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5340",
@@ -778,10 +723,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:39.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:39.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5704",
@@ -792,10 +736,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:44.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:44.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1764",
@@ -806,10 +749,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:32:48.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:32:48.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1916",
@@ -820,10 +762,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:33:05.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:33:05.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6200",
@@ -834,10 +775,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:33:42.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:33:42.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6696",
@@ -848,10 +788,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:34:07.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:34:07.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "7312",
@@ -862,10 +801,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:35:44.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:35:44.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "7772",
@@ -876,10 +814,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:36:03.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:36:03.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6724",
@@ -890,10 +827,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "True",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:36:09.000000",
-        "File": "UTC",
-        "output": "2023-05-21"
+        "CreateTime": "2023-05-21 22:36:09.000000 UTC",
+        "ExitTime": "2023-05-21",
+        "File output": "23:01:24.000000 UTC Disabled"
     },
     {
         "PID": "4224",
@@ -904,10 +840,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "True",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:36:23.000000",
-        "File": "UTC",
-        "output": "2023-05-21"
+        "CreateTime": "2023-05-21 22:36:23.000000 UTC",
+        "ExitTime": "2023-05-21",
+        "File output": "23:01:24.000000 UTC Disabled"
     },
     {
         "PID": "7160",
@@ -918,10 +853,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:39:13.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:39:13.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4628",
@@ -932,10 +866,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "True",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:40:10.000000",
-        "File": "UTC",
-        "output": "2023-05-21"
+        "CreateTime": "2023-05-21 22:40:10.000000 UTC",
+        "ExitTime": "2023-05-21",
+        "File output": "23:01:24.000000 UTC Disabled"
     },
     {
         "PID": "6048",
@@ -946,10 +879,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:40:20.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:40:20.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "8264",
@@ -960,10 +892,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:40:33.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:40:33.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3608",
@@ -974,10 +905,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:41:28.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:41:28.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6644",
@@ -988,10 +918,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:41:52.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:41:52.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5656",
@@ -1002,10 +931,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "21:58:19.000000",
-        "File": "UTC",
-        "output": "2023-05-21"
+        "CreateTime": "2023-05-21 21:58:19.000000 UTC",
+        "ExitTime": "2023-05-21",
+        "File output": "22:02:01.000000 UTC Disabled"
     },
     {
         "PID": "8952",
@@ -1016,10 +944,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "21:59:11.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 21:59:11.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5808",
@@ -1030,10 +957,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "21:59:58.000000",
-        "File": "UTC",
-        "output": "2023-05-21"
+        "CreateTime": "2023-05-21 21:59:58.000000 UTC",
+        "ExitTime": "2023-05-21",
+        "File output": "22:07:45.000000 UTC Disabled"
     },
     {
         "PID": "2388",
@@ -1044,10 +970,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:05:35.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:05:35.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6292",
@@ -1058,10 +983,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:06:15.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:06:15.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "3876",
@@ -1072,10 +996,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:08:02.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:08:02.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "372",
@@ -1086,10 +1009,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:10:00.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:10:00.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "1120",
@@ -1100,10 +1022,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:10:01.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:10:01.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6076",
@@ -1114,10 +1035,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:11:36.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:11:36.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "7336",
@@ -1128,10 +1048,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:11:39.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:11:39.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "7964",
@@ -1142,10 +1061,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:22:09.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:22:09.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6544",
@@ -1156,10 +1074,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:22:35.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:22:35.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5964",
@@ -1170,10 +1087,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:27:56.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:27:56.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "8896",
@@ -1184,10 +1100,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:21.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:21.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5156",
@@ -1198,10 +1113,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:28:22.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:28:22.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5896",
@@ -1212,10 +1126,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "True",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:30:56.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:30:56.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "7732",
@@ -1226,10 +1139,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "True",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:31:53.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:31:53.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6324",
@@ -1240,24 +1152,22 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:42:56.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:42:56.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2228",
         "PPID": "3580",
-        "ImageFileName": "FTK",
-        "Offset(V)": "Imager.exe",
-        "Threads": "0xad818d143080",
-        "Handles": "10",
-        "SessionId": "-",
-        "Wow64": "1",
-        "CreateTime": "False",
-        "ExitTime": "2023-05-21",
-        "File": "22:43:56.000000",
-        "output": "UTC"
+        "ImageFileName": "FTK Imager.exe",
+        "Offset(V)": "0xad818d143080",
+        "Threads": "10",
+        "Handles": "-",
+        "SessionId": "1",
+        "Wow64": "False",
+        "CreateTime": "2023-05-21 22:43:56.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5636",
@@ -1268,10 +1178,9 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:46:50.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:46:50.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2044",
@@ -1282,10 +1191,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:49:29.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:49:29.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "8708",
@@ -1296,10 +1204,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:57:33.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:57:33.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5476",
@@ -1310,10 +1217,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:58:08.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:58:08.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "6596",
@@ -1324,10 +1230,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:58:13.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:58:13.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "2332",
@@ -1338,10 +1243,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "22:58:13.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 22:58:13.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "4340",
@@ -1352,10 +1256,9 @@
         "Handles": "-",
         "SessionId": "0",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "23:01:06.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 23:01:06.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "7540",
@@ -1366,24 +1269,22 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "False",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "23:02:26.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 23:02:26.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "8920",
         "PPID": "3580",
-        "ImageFileName": "FTK",
-        "Offset(V)": "Imager.exe",
-        "Threads": "0xad818ef81080",
-        "Handles": "20",
-        "SessionId": "-",
-        "Wow64": "1",
-        "CreateTime": "False",
-        "ExitTime": "2023-05-21",
-        "File": "23:02:28.000000",
-        "output": "UTC"
+        "ImageFileName": "FTK Imager.exe",
+        "Offset(V)": "0xad818ef81080",
+        "Threads": "20",
+        "Handles": "-",
+        "SessionId": "1",
+        "Wow64": "False",
+        "CreateTime": "2023-05-21 23:02:28.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     },
     {
         "PID": "5480",
@@ -1394,9 +1295,8 @@
         "Handles": "-",
         "SessionId": "1",
         "Wow64": "True",
-        "CreateTime": "2023-05-21",
-        "ExitTime": "23:03:00.000000",
-        "File": "UTC",
-        "output": "N/A"
+        "CreateTime": "2023-05-21 23:03:00.000000 UTC",
+        "ExitTime": "N/A",
+        "File output": "Disabled"
     }
 ]
