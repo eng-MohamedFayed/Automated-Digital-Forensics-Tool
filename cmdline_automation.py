@@ -792,11 +792,11 @@ class MemoryAnalyzer:
         pids_to_check = set()
         for entry in malfind_data:
             pids_to_check.add(entry.get("PID"))
-            for process in pslist_data:
-                if process.get("PPID") in pids_to_check and process.get("PID") not in pids_to_check:
-                    pids_to_check.add(process.get("PID"))
+        for process in pslist_data:
+            if process.get("PPID") in pids_to_check and process.get("PID") not in pids_to_check:
+                pids_to_check.add(process.get("PID"))
 
-        logging.debug(f"PIDs to check: {pids_to_check}")
+        logging.info(f"PIDs to check: {pids_to_check}")
 
         self.dump_and_scan_processes(pids_to_check, dump_dir)
 
