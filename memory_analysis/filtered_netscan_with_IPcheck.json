@@ -1,91 +1,471 @@
 {
     "UniqueOwners": [
         {
-            "Owner": "svchost.exe",
-            "PID": "5476"
+            "Owner": "-",
+            "PID": "-",
+            "Malicious_IP": [
+                "204.79.197.200"
+            ],
+            "Has_Malicious_IP": true
         },
         {
-            "Owner": "explorer.exe",
-            "PID": "3580"
-        },
-        {
-            "Owner": "wininit.exe",
-            "PID": "552"
-        },
-        {
-            "Owner": "lsass.exe",
-            "PID": "696"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1012"
-        },
-        {
-            "Owner": "spoolsv.exe",
-            "PID": "1840"
+            "Owner": "oneetx.exe",
+            "PID": "5896",
+            "Malicious_IP": [
+                "77.91.124.20"
+            ],
+            "Has_Malicious_IP": true
         },
         {
             "Owner": "tun2socks.exe",
-            "PID": "4628"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "952"
-        },
-        {
-            "Owner": "SkypeApp.exe",
-            "PID": "6644"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "5964"
-        },
-        {
-            "Owner": "services.exe",
-            "PID": "676"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1196"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "3004"
-        },
-        {
-            "Owner": "-",
-            "PID": "-"
-        },
-        {
-            "Owner": "oneetx.exe",
-            "PID": "5480"
-        },
-        {
-            "Owner": "oneetx.exe",
-            "PID": "5896"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "1448"
-        },
-        {
-            "Owner": "msedge.exe",
-            "PID": "5328"
-        },
-        {
-            "Owner": "System",
-            "PID": "4"
-        },
-        {
-            "Owner": "svchost.exe",
-            "PID": "448"
+            "PID": "4628",
+            "Malicious_IP": [
+                "38.121.43.65"
+            ],
+            "Has_Malicious_IP": true
         },
         {
             "Owner": "SearchApp.exe",
-            "PID": "1916"
+            "PID": "1916",
+            "Malicious_IP": [
+                "204.79.197.203"
+            ],
+            "Has_Malicious_IP": true
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "952",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1012",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "System",
+            "PID": "4",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "lsass.exe",
+            "PID": "696",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "5476",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "oneetx.exe",
+            "PID": "5480",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "spoolsv.exe",
+            "PID": "1840",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "5964",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1448",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "explorer.exe",
+            "PID": "3580",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "3004",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "wininit.exe",
+            "PID": "552",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "services.exe",
+            "PID": "676",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "SkypeApp.exe",
+            "PID": "6644",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "448",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "msedge.exe",
+            "PID": "5328",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
+        },
+        {
+            "Owner": "svchost.exe",
+            "PID": "1196",
+            "Malicious_IP": [],
+            "Has_Malicious_IP": false
         }
     ],
     "GroupedConnections": [
+        {
+            "Owner": "tun2socks.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.190.141",
+                    "LocalPort": "53660",
+                    "ForeignAddr": "38.121.43.65",
+                    "ForeignPort": "443",
+                    "pid": "4628",
+                    "VT_Results": {
+                        "ip_address": "38.121.43.65",
+                        "country": "US",
+                        "asn": 63023,
+                        "as_owner": "AS-GLOBALTELEHOST",
+                        "reputation": 0,
+                        "tags": [],
+                        "last_modification_date": 1736188402,
+                        "malicious_count": 2,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": true,
+                        "detections": [
+                            {
+                                "engine_name": "MalwareURL",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "SOCRadar",
+                                "category": "malicious",
+                                "result": "malicious"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "N/A",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "52051",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "4628"
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.190.141",
+                    "LocalPort": "55433",
+                    "ForeignAddr": "38.121.43.65",
+                    "ForeignPort": "443",
+                    "pid": "4628",
+                    "VT_Results": {
+                        "ip_address": "38.121.43.65",
+                        "country": "US",
+                        "asn": 63023,
+                        "as_owner": "AS-GLOBALTELEHOST",
+                        "reputation": 0,
+                        "tags": [],
+                        "last_modification_date": 1736188402,
+                        "malicious_count": 2,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": true,
+                        "detections": [
+                            {
+                                "engine_name": "MalwareURL",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "SOCRadar",
+                                "category": "malicious",
+                                "result": "malicious"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "N/A",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "55536",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "4628"
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "N/A",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "56228",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "4628"
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "N/A",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "49734",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "4628"
+                }
+            ],
+            "Has_Malicious_IP": true
+        },
+        {
+            "Owner": "SearchApp.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSE_WAIT",
+                    "LocalAddr": "192.168.190.141",
+                    "LocalPort": "49710",
+                    "ForeignAddr": "204.79.197.203",
+                    "ForeignPort": "443",
+                    "pid": "1916",
+                    "VT_Results": {
+                        "ip_address": "204.79.197.203",
+                        "country": "US",
+                        "asn": 8068,
+                        "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                        "reputation": -228,
+                        "tags": [],
+                        "last_modification_date": 1736276475,
+                        "malicious_count": 1,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": true,
+                        "detections": [
+                            {
+                                "engine_name": "MalwareURL",
+                                "category": "malicious",
+                                "result": "malware"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSE_WAIT",
+                    "LocalAddr": "192.168.190.141",
+                    "LocalPort": "49713",
+                    "ForeignAddr": "104.119.188.96",
+                    "ForeignPort": "443",
+                    "pid": "1916",
+                    "VT_Results": {
+                        "ip_address": "104.119.188.96",
+                        "country": "US",
+                        "asn": 20940,
+                        "as_owner": "Akamai International B.V.",
+                        "reputation": 0,
+                        "tags": [],
+                        "last_modification_date": 1735674172,
+                        "malicious_count": 0,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": false,
+                        "detections": []
+                    }
+                }
+            ],
+            "Has_Malicious_IP": true
+        },
+        {
+            "Owner": "oneetx.exe",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "10.0.85.2",
+                    "LocalPort": "55462",
+                    "ForeignAddr": "77.91.124.20",
+                    "ForeignPort": "80",
+                    "pid": "5896",
+                    "VT_Results": {
+                        "ip_address": "77.91.124.20",
+                        "country": "DE",
+                        "asn": 215730,
+                        "as_owner": "H2nexus Ltd",
+                        "reputation": -3,
+                        "tags": [],
+                        "last_modification_date": 1736133382,
+                        "malicious_count": 12,
+                        "suspicious_count": 1,
+                        "total_scans": 94,
+                        "is_malicious": true,
+                        "detections": [
+                            {
+                                "engine_name": "alphaMountain.ai",
+                                "category": "malicious",
+                                "result": "phishing"
+                            },
+                            {
+                                "engine_name": "BitDefender",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "CyRadar",
+                                "category": "malicious",
+                                "result": "malicious"
+                            },
+                            {
+                                "engine_name": "Dr.Web",
+                                "category": "malicious",
+                                "result": "malicious"
+                            },
+                            {
+                                "engine_name": "ESET",
+                                "category": "suspicious",
+                                "result": "suspicious"
+                            },
+                            {
+                                "engine_name": "Emsisoft",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "Fortinet",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "G-Data",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "Kaspersky",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "Lionic",
+                                "category": "malicious",
+                                "result": "malicious"
+                            },
+                            {
+                                "engine_name": "MalwareURL",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "SOCRadar",
+                                "category": "malicious",
+                                "result": "malware"
+                            },
+                            {
+                                "engine_name": "Webroot",
+                                "category": "malicious",
+                                "result": "malicious"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "N/A",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "5480"
+                },
+                {
+                    "protocol": "UDPv6",
+                    "State": "N/A",
+                    "LocalAddr": "::",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "5480"
+                },
+                {
+                    "protocol": "UDPv4",
+                    "State": "N/A",
+                    "LocalAddr": "0.0.0.0",
+                    "LocalPort": "0",
+                    "ForeignAddr": "*",
+                    "ForeignPort": "0",
+                    "pid": "5480"
+                }
+            ],
+            "Has_Malicious_IP": true
+        },
+        {
+            "Owner": "-",
+            "Connections": [
+                {
+                    "protocol": "TCPv4",
+                    "State": "CLOSED",
+                    "LocalAddr": "192.168.190.141",
+                    "LocalPort": "52434",
+                    "ForeignAddr": "204.79.197.200",
+                    "ForeignPort": "443",
+                    "pid": "-",
+                    "VT_Results": {
+                        "ip_address": "204.79.197.200",
+                        "country": "US",
+                        "asn": 8068,
+                        "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                        "reputation": -135,
+                        "tags": [],
+                        "last_modification_date": 1736275370,
+                        "malicious_count": 1,
+                        "suspicious_count": 1,
+                        "total_scans": 94,
+                        "is_malicious": true,
+                        "detections": [
+                            {
+                                "engine_name": "Criminal IP",
+                                "category": "suspicious",
+                                "result": "suspicious"
+                            },
+                            {
+                                "engine_name": "MalwareURL",
+                                "category": "malicious",
+                                "result": "malware"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "Has_Malicious_IP": true
+        },
         {
             "Owner": "spoolsv.exe",
             "Connections": [
@@ -116,7 +496,8 @@
                     "ForeignPort": "0",
                     "pid": "1840"
                 }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "svchost.exe",
@@ -236,7 +617,21 @@
                     "LocalPort": "55439",
                     "ForeignAddr": "20.22.207.36",
                     "ForeignPort": "443",
-                    "pid": "448"
+                    "pid": "448",
+                    "VT_Results": {
+                        "ip_address": "20.22.207.36",
+                        "country": "US",
+                        "asn": 8075,
+                        "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                        "reputation": 0,
+                        "tags": [],
+                        "last_modification_date": 1736274232,
+                        "malicious_count": 0,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": false,
+                        "detections": []
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -344,7 +739,21 @@
                     "LocalPort": "55460",
                     "ForeignAddr": "52.159.127.243",
                     "ForeignPort": "443",
-                    "pid": "448"
+                    "pid": "448",
+                    "VT_Results": {
+                        "ip_address": "52.159.127.243",
+                        "country": "US",
+                        "asn": 8075,
+                        "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                        "reputation": 0,
+                        "tags": [],
+                        "last_modification_date": 1736144161,
+                        "malicious_count": 0,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": false,
+                        "detections": []
+                    }
                 },
                 {
                     "protocol": "UDPv4",
@@ -724,7 +1133,8 @@
                     "ForeignPort": "0",
                     "pid": "3004"
                 }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "wininit.exe",
@@ -756,7 +1166,8 @@
                     "ForeignPort": "0",
                     "pid": "552"
                 }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "lsass.exe",
@@ -788,7 +1199,8 @@
                     "ForeignPort": "0",
                     "pid": "696"
                 }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "System",
@@ -856,7 +1268,8 @@
                     "ForeignPort": "0",
                     "pid": "4"
                 }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "SkypeApp.exe",
@@ -886,9 +1299,24 @@
                     "LocalPort": "55424",
                     "ForeignAddr": "52.182.143.208",
                     "ForeignPort": "443",
-                    "pid": "6644"
+                    "pid": "6644",
+                    "VT_Results": {
+                        "ip_address": "52.182.143.208",
+                        "country": "US",
+                        "asn": 8075,
+                        "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                        "reputation": 0,
+                        "tags": [],
+                        "last_modification_date": 1736269909,
+                        "malicious_count": 0,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": false,
+                        "detections": []
+                    }
                 }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "services.exe",
@@ -920,66 +1348,8 @@
                     "ForeignPort": "0",
                     "pid": "676"
                 }
-            ]
-        },
-        {
-            "Owner": "tun2socks.exe",
-            "Connections": [
-                {
-                    "protocol": "TCPv4",
-                    "State": "CLOSED",
-                    "LocalAddr": "192.168.190.141",
-                    "LocalPort": "53660",
-                    "ForeignAddr": "38.121.43.65",
-                    "ForeignPort": "443",
-                    "pid": "4628"
-                },
-                {
-                    "protocol": "UDPv4",
-                    "State": "N/A",
-                    "LocalAddr": "0.0.0.0",
-                    "LocalPort": "52051",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "4628"
-                },
-                {
-                    "protocol": "TCPv4",
-                    "State": "CLOSED",
-                    "LocalAddr": "192.168.190.141",
-                    "LocalPort": "55433",
-                    "ForeignAddr": "38.121.43.65",
-                    "ForeignPort": "443",
-                    "pid": "4628"
-                },
-                {
-                    "protocol": "UDPv4",
-                    "State": "N/A",
-                    "LocalAddr": "0.0.0.0",
-                    "LocalPort": "55536",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "4628"
-                },
-                {
-                    "protocol": "UDPv4",
-                    "State": "N/A",
-                    "LocalAddr": "0.0.0.0",
-                    "LocalPort": "56228",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "4628"
-                },
-                {
-                    "protocol": "UDPv4",
-                    "State": "N/A",
-                    "LocalAddr": "0.0.0.0",
-                    "LocalPort": "49734",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "4628"
-                }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "msedge.exe",
@@ -1074,30 +1444,8 @@
                     "ForeignPort": "0",
                     "pid": "5328"
                 }
-            ]
-        },
-        {
-            "Owner": "SearchApp.exe",
-            "Connections": [
-                {
-                    "protocol": "TCPv4",
-                    "State": "CLOSE_WAIT",
-                    "LocalAddr": "192.168.190.141",
-                    "LocalPort": "49710",
-                    "ForeignAddr": "204.79.197.203",
-                    "ForeignPort": "443",
-                    "pid": "1916"
-                },
-                {
-                    "protocol": "TCPv4",
-                    "State": "CLOSE_WAIT",
-                    "LocalAddr": "192.168.190.141",
-                    "LocalPort": "49713",
-                    "ForeignAddr": "104.119.188.96",
-                    "ForeignPort": "443",
-                    "pid": "1916"
-                }
-            ]
+            ],
+            "Has_Malicious_IP": false
         },
         {
             "Owner": "explorer.exe",
@@ -1109,64 +1457,24 @@
                     "LocalPort": "53659",
                     "ForeignAddr": "204.79.197.237",
                     "ForeignPort": "443",
-                    "pid": "3580"
+                    "pid": "3580",
+                    "VT_Results": {
+                        "ip_address": "204.79.197.237",
+                        "country": "US",
+                        "asn": 8068,
+                        "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+                        "reputation": -1,
+                        "tags": [],
+                        "last_modification_date": 1736276199,
+                        "malicious_count": 0,
+                        "suspicious_count": 0,
+                        "total_scans": 94,
+                        "is_malicious": false,
+                        "detections": []
+                    }
                 }
-            ]
-        },
-        {
-            "Owner": "oneetx.exe",
-            "Connections": [
-                {
-                    "protocol": "TCPv4",
-                    "State": "CLOSED",
-                    "LocalAddr": "10.0.85.2",
-                    "LocalPort": "55462",
-                    "ForeignAddr": "77.91.124.20",
-                    "ForeignPort": "80",
-                    "pid": "5896"
-                },
-                {
-                    "protocol": "UDPv4",
-                    "State": "N/A",
-                    "LocalAddr": "0.0.0.0",
-                    "LocalPort": "0",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "5480"
-                },
-                {
-                    "protocol": "UDPv6",
-                    "State": "N/A",
-                    "LocalAddr": "::",
-                    "LocalPort": "0",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "5480"
-                },
-                {
-                    "protocol": "UDPv4",
-                    "State": "N/A",
-                    "LocalAddr": "0.0.0.0",
-                    "LocalPort": "0",
-                    "ForeignAddr": "*",
-                    "ForeignPort": "0",
-                    "pid": "5480"
-                }
-            ]
-        },
-        {
-            "Owner": "-",
-            "Connections": [
-                {
-                    "protocol": "TCPv4",
-                    "State": "CLOSED",
-                    "LocalAddr": "192.168.190.141",
-                    "LocalPort": "52434",
-                    "ForeignAddr": "204.79.197.200",
-                    "ForeignPort": "443",
-                    "pid": "-"
-                }
-            ]
+            ],
+            "Has_Malicious_IP": false
         }
     ]
 }

@@ -1,0 +1,235 @@
+{
+    "foreign_ips_scanned": [
+        "204.79.197.237",
+        "20.22.207.36",
+        "52.159.127.243",
+        "104.119.188.96",
+        "204.79.197.203",
+        "38.121.43.65",
+        "204.79.197.200",
+        "77.91.124.20",
+        "52.182.143.208"
+    ],
+    "ip_analysis_results": [
+        {
+            "ip_address": "77.91.124.20",
+            "country": "DE",
+            "asn": 215730,
+            "as_owner": "H2nexus Ltd",
+            "reputation": -3,
+            "tags": [],
+            "last_modification_date": 1736133382,
+            "malicious_count": 12,
+            "suspicious_count": 1,
+            "total_scans": 94,
+            "is_malicious": true,
+            "detections": [
+                {
+                    "engine_name": "alphaMountain.ai",
+                    "category": "malicious",
+                    "result": "phishing"
+                },
+                {
+                    "engine_name": "BitDefender",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "CyRadar",
+                    "category": "malicious",
+                    "result": "malicious"
+                },
+                {
+                    "engine_name": "Dr.Web",
+                    "category": "malicious",
+                    "result": "malicious"
+                },
+                {
+                    "engine_name": "ESET",
+                    "category": "suspicious",
+                    "result": "suspicious"
+                },
+                {
+                    "engine_name": "Emsisoft",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "Fortinet",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "G-Data",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "Kaspersky",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "Lionic",
+                    "category": "malicious",
+                    "result": "malicious"
+                },
+                {
+                    "engine_name": "MalwareURL",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "SOCRadar",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "Webroot",
+                    "category": "malicious",
+                    "result": "malicious"
+                }
+            ]
+        },
+        {
+            "ip_address": "38.121.43.65",
+            "country": "US",
+            "asn": 63023,
+            "as_owner": "AS-GLOBALTELEHOST",
+            "reputation": 0,
+            "tags": [],
+            "last_modification_date": 1736188402,
+            "malicious_count": 2,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": true,
+            "detections": [
+                {
+                    "engine_name": "MalwareURL",
+                    "category": "malicious",
+                    "result": "malware"
+                },
+                {
+                    "engine_name": "SOCRadar",
+                    "category": "malicious",
+                    "result": "malicious"
+                }
+            ]
+        },
+        {
+            "ip_address": "204.79.197.200",
+            "country": "US",
+            "asn": 8068,
+            "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+            "reputation": -135,
+            "tags": [],
+            "last_modification_date": 1736275370,
+            "malicious_count": 1,
+            "suspicious_count": 1,
+            "total_scans": 94,
+            "is_malicious": true,
+            "detections": [
+                {
+                    "engine_name": "Criminal IP",
+                    "category": "suspicious",
+                    "result": "suspicious"
+                },
+                {
+                    "engine_name": "MalwareURL",
+                    "category": "malicious",
+                    "result": "malware"
+                }
+            ]
+        },
+        {
+            "ip_address": "204.79.197.203",
+            "country": "US",
+            "asn": 8068,
+            "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+            "reputation": -228,
+            "tags": [],
+            "last_modification_date": 1736276475,
+            "malicious_count": 1,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": true,
+            "detections": [
+                {
+                    "engine_name": "MalwareURL",
+                    "category": "malicious",
+                    "result": "malware"
+                }
+            ]
+        },
+        {
+            "ip_address": "204.79.197.237",
+            "country": "US",
+            "asn": 8068,
+            "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+            "reputation": -1,
+            "tags": [],
+            "last_modification_date": 1736276199,
+            "malicious_count": 0,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": false,
+            "detections": []
+        },
+        {
+            "ip_address": "20.22.207.36",
+            "country": "US",
+            "asn": 8075,
+            "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+            "reputation": 0,
+            "tags": [],
+            "last_modification_date": 1736274232,
+            "malicious_count": 0,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": false,
+            "detections": []
+        },
+        {
+            "ip_address": "52.159.127.243",
+            "country": "US",
+            "asn": 8075,
+            "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+            "reputation": 0,
+            "tags": [],
+            "last_modification_date": 1736144161,
+            "malicious_count": 0,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": false,
+            "detections": []
+        },
+        {
+            "ip_address": "104.119.188.96",
+            "country": "US",
+            "asn": 20940,
+            "as_owner": "Akamai International B.V.",
+            "reputation": 0,
+            "tags": [],
+            "last_modification_date": 1735674172,
+            "malicious_count": 0,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": false,
+            "detections": []
+        },
+        {
+            "ip_address": "52.182.143.208",
+            "country": "US",
+            "asn": 8075,
+            "as_owner": "MICROSOFT-CORP-MSN-AS-BLOCK",
+            "reputation": 0,
+            "tags": [],
+            "last_modification_date": 1736269909,
+            "malicious_count": 0,
+            "suspicious_count": 0,
+            "total_scans": 94,
+            "is_malicious": false,
+            "detections": []
+        }
+    ]
+}
