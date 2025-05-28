@@ -3307,3 +3307,276 @@
 2025-05-14 08:28:51,154 - INFO - VirusTotal analysis completed for D:\college\GradProject\106-RedLine\trial\memory_analysis\dumped_memory\PID_6280\file.0xa605c9baea50.0xa605c9bcec70.ImageSectionObject.WindowsCodecs.dll.img: Clean
 2025-05-14 08:28:51,155 - INFO - Scanning file with VirusTotal: D:\college\GradProject\106-RedLine\trial\memory_analysis\dumped_memory\PID_6280\file.0xa605c9bb01c0.0xa605c9bbaa20.ImageSectionObject.uxtheme.dll.img
 2025-05-14 08:28:52,108 - INFO - File D:\college\GradProject\106-RedLine\trial\memory_analysis\dumped_memory\PID_6280\file.0xa605c9bb01c0.0xa605c9bbaa20.ImageSectionObject.uxtheme.dll.img not found in VirusTotal. Uploading...
+2025-05-27 21:33:43,495 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:33:43,530 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:33:55,722 - INFO - Listing running processes...
+2025-05-27 21:34:13,718 - INFO - Selected PIDs for dumping: [23504, 10856, 20664, 12524]
+2025-05-27 21:34:16,843 - ERROR - Error dumping processes: Command '['procdump.exe', '-ma', '23504', 'D:\\college\\GradProject\\106-RedLine\\trial\\process_dumps\\process_23504_dump.dmp']' returned non-zero exit status 4294967294.
+2025-05-27 21:34:16,844 - ERROR - Failed to dump any processes.
+2025-05-27 21:34:16,844 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-27 21:37:37,222 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:37:37,222 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:37:43,646 - INFO - Re-running script as admin for live acquisition.
+2025-05-27 21:37:45,995 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:37:45,996 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:38:01,382 - INFO - Listing running processes...
+2025-05-27 21:38:17,222 - INFO - Selected PIDs for dumping: [3228, 12012]
+2025-05-27 21:38:22,727 - ERROR - Error dumping processes: Command '['procdump.exe', '-ma', '3228', 'D:\\college\\GradProject\\106-RedLine\\trial\\process_dumps\\process_3228_dump.dmp']' returned non-zero exit status 4294967294.
+2025-05-27 21:38:22,727 - ERROR - Failed to dump any processes.
+2025-05-27 21:38:22,727 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-27 21:39:59,973 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:39:59,973 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:40:04,275 - INFO - Listing running processes...
+2025-05-27 21:40:37,006 - INFO - Selected PIDs for dumping: [5364, 5388, 22592]
+2025-05-27 21:40:37,068 - INFO - Successfully dumped process 5364 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_5364_dump.dmp
+2025-05-27 21:40:37,123 - INFO - Successfully dumped process 5388 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_5388_dump.dmp
+2025-05-27 21:40:40,619 - INFO - Successfully dumped process 22592 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_22592_dump.dmp
+2025-05-27 21:40:40,619 - INFO - Successfully dumped 3 processes.
+2025-05-27 21:40:40,619 - INFO - Prompting user to select Volatility script path.
+2025-05-27 21:40:54,855 - WARNING - No Volatility script selected.
+2025-05-27 21:40:54,856 - ERROR - Volatility path selection failed or was cancelled.
+2025-05-27 21:49:15,354 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:49:15,354 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:49:21,932 - INFO - Re-running script as admin for live acquisition.
+2025-05-27 21:49:25,586 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:49:25,586 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:49:29,267 - INFO - Listing running processes...
+2025-05-27 21:50:49,400 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:50:49,400 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:50:55,437 - INFO - Re-running script as admin for live acquisition.
+2025-05-27 21:50:57,624 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:50:57,625 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:51:03,896 - INFO - Listing running processes...
+2025-05-27 21:51:34,103 - WARNING - No processes selected for dumping.
+2025-05-27 21:51:34,103 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-27 21:53:16,941 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:53:16,941 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:53:23,508 - INFO - Re-running script as admin for live acquisition.
+2025-05-27 21:53:26,005 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:53:26,005 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:53:29,671 - INFO - Listing running processes...
+2025-05-27 21:53:53,772 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:53:53,772 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:53:58,512 - INFO - Re-running script as admin for live acquisition.
+2025-05-27 21:54:01,060 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:54:01,060 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:54:05,705 - INFO - Listing running processes...
+2025-05-27 21:56:11,987 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:56:11,987 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:56:14,990 - INFO - Re-running script as admin for live acquisition.
+2025-05-27 21:56:17,538 - INFO - Starting Volatility 3 Automation.
+2025-05-27 21:56:17,539 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-27 21:56:30,075 - WARNING - Invalid local acquisition choice.
+2025-05-27 21:56:30,075 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:00:19,996 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:00:20,007 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:00:51,454 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:00:51,454 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:03:45,145 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:03:45,146 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:03:48,084 - INFO - User went back from remote acquisition options.
+2025-05-28 00:03:48,085 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:12:31,287 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:12:31,288 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:13:22,814 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:13:22,814 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:14:10,182 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:14:10,182 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:14:28,920 - INFO - Re-running script as admin for live acquisition.
+2025-05-28 00:14:31,844 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:14:31,844 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:14:36,344 - INFO - Listing running processes...
+2025-05-28 00:14:46,387 - WARNING - No processes selected for dumping.
+2025-05-28 00:14:46,388 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:18:16,878 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:18:16,879 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:18:20,670 - INFO - Re-running script as admin for live acquisition.
+2025-05-28 00:18:23,401 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:18:23,401 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:18:27,019 - INFO - Listing running processes...
+2025-05-28 00:19:06,383 - WARNING - No valid processes selected for dumping.
+2025-05-28 00:19:06,383 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:20:48,198 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:20:48,199 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:20:49,909 - INFO - Listing running processes...
+2025-05-28 00:20:55,161 - INFO - Selected PIDs for dumping: [25424]
+2025-05-28 00:20:55,833 - INFO - Successfully dumped process 25424 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_25424_dump.dmp
+2025-05-28 00:20:55,834 - INFO - Successfully dumped 1 processes.
+2025-05-28 00:20:55,834 - INFO - Prompting user to select Volatility script path.
+2025-05-28 00:21:59,032 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 00:22:16,433 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:22:16,434 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:22:20,224 - INFO - User chose to use existing memory dump file.
+2025-05-28 00:24:15,597 - INFO - Memory dump file selected: D:/Forensics tools/volatility3/MemoryDump.mem
+2025-05-28 00:24:15,599 - INFO - Prompting user to select Volatility script path.
+2025-05-28 00:24:18,592 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 00:27:26,557 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:27:26,558 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:27:28,625 - INFO - User chose to use existing memory dump file.
+2025-05-28 00:27:33,578 - INFO - Memory dump file selected: D:/Forensics tools/volatility3/MemoryDump.mem
+2025-05-28 00:27:33,582 - INFO - Prompting user to select Volatility script path.
+2025-05-28 00:27:36,698 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 00:27:50,410 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:27:50,410 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:27:55,823 - INFO - Listing running processes...
+2025-05-28 00:28:00,423 - INFO - Selected PIDs for dumping: [0]
+2025-05-28 00:28:00,815 - INFO - Successfully dumped process 0 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_0_dump.dmp
+2025-05-28 00:28:00,815 - INFO - Successfully dumped 1 processes.
+2025-05-28 00:28:00,815 - INFO - Prompting user to select Volatility script path.
+2025-05-28 00:28:04,518 - WARNING - No Volatility script selected.
+2025-05-28 00:28:04,523 - ERROR - Volatility path selection failed or was cancelled.
+2025-05-28 00:28:04,523 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 00:28:04,523 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 00:28:06,678 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:28:06,679 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:28:09,866 - INFO - Listing running processes...
+2025-05-28 00:28:16,755 - WARNING - No valid processes selected for dumping.
+2025-05-28 00:28:16,756 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:28:16,756 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 00:28:36,169 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:28:36,169 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:28:40,819 - INFO - Listing running processes...
+2025-05-28 00:28:53,751 - WARNING - No valid processes selected for dumping.
+2025-05-28 00:28:53,751 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:28:53,751 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 00:29:10,196 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:29:10,196 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:29:19,256 - INFO - Listing running processes...
+2025-05-28 00:29:40,579 - WARNING - No valid processes selected for dumping.
+2025-05-28 00:29:40,581 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 00:29:40,581 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 00:30:22,155 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:30:22,156 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:30:24,095 - INFO - Listing running processes...
+2025-05-28 00:30:30,911 - INFO - Selected PIDs for dumping: [24764]
+2025-05-28 00:30:31,300 - INFO - Successfully dumped process 24764 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_24764_dump.dmp
+2025-05-28 00:30:31,300 - INFO - Successfully dumped 1 processes.
+2025-05-28 00:30:31,300 - INFO - Prompting user to select Volatility script path.
+2025-05-28 00:30:41,896 - WARNING - No Volatility script selected.
+2025-05-28 00:30:41,899 - ERROR - Volatility path selection failed or was cancelled.
+2025-05-28 00:30:41,899 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 00:30:41,899 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 00:30:46,174 - INFO - Starting Volatility 3 Automation.
+2025-05-28 00:30:46,175 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 00:30:47,980 - INFO - Listing running processes...
+2025-05-28 00:30:57,362 - INFO - Selected PIDs for dumping: [4008]
+2025-05-28 00:30:57,759 - INFO - Successfully dumped process 4008 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_4008_dump.dmp
+2025-05-28 00:30:57,759 - INFO - Successfully dumped 1 processes.
+2025-05-28 00:30:57,759 - INFO - Prompting user to select Volatility script path.
+2025-05-28 00:31:03,457 - WARNING - No Volatility script selected.
+2025-05-28 00:31:03,460 - ERROR - Volatility path selection failed or was cancelled.
+2025-05-28 00:31:03,460 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 00:31:03,460 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 02:13:49,188 - INFO - Starting Volatility 3 Automation.
+2025-05-28 02:13:49,222 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 02:13:52,569 - INFO - Listing running processes...
+2025-05-28 02:13:56,052 - INFO - Selected PIDs for dumping: [27296]
+2025-05-28 02:13:56,294 - INFO - Successfully dumped process 27296 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_27296_dump.dmp
+2025-05-28 02:13:56,294 - INFO - Successfully dumped 1 processes.
+2025-05-28 02:13:56,294 - INFO - Prompting user to select Volatility script path.
+2025-05-28 02:14:01,356 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 02:14:01,358 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 02:17:55,115 - INFO - Starting Volatility 3 Automation.
+2025-05-28 02:17:55,115 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 02:17:58,719 - INFO - Listing running processes...
+2025-05-28 02:18:02,883 - INFO - Selected PIDs for dumping: [27296]
+2025-05-28 02:18:07,468 - INFO - Successfully dumped process 27296 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_27296_dump.dmp
+2025-05-28 02:18:07,468 - INFO - Successfully dumped 1 processes.
+2025-05-28 02:18:07,468 - INFO - Prompting user to select Volatility script path.
+2025-05-28 02:18:13,808 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 02:18:13,811 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 02:18:54,701 - INFO - Exiting Volatility 3 Automation.
+2025-05-28 02:18:57,750 - INFO - Starting Volatility 3 Automation.
+2025-05-28 02:18:57,751 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 02:19:00,214 - INFO - Listing running processes...
+2025-05-28 02:19:09,679 - INFO - Selected PIDs for dumping: [0]
+2025-05-28 02:19:09,911 - INFO - Successfully dumped process 0 to D:\college\GradProject\106-RedLine\trial\process_dumps\process_0_dump.dmp
+2025-05-28 02:19:09,911 - INFO - Successfully dumped 1 processes.
+2025-05-28 02:19:09,911 - INFO - Prompting user to select Volatility script path.
+2025-05-28 02:19:13,604 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 02:19:13,606 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 02:44:54,937 - INFO - Starting Volatility 3 Automation.
+2025-05-28 02:44:55,087 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 02:45:01,570 - INFO - Gathering remote machine details for acquisition.
+2025-05-28 02:47:40,394 - INFO - Establishing connection to \\192.168.112.146\C$ using net use...
+2025-05-28 02:47:40,663 - INFO - Creating dedicated subfolder: C:\Users\Administrator\AppData\Local\Temp\proc_dump_f8b31c56
+2025-05-28 02:48:03,123 - INFO - Copying procdump.exe to remote machine...
+2025-05-28 02:48:03,944 - INFO - Getting list of processes on remote machine...
+2025-05-28 02:50:46,570 - INFO - Selected PIDs for dumping: [6832, 7952, 6620]
+2025-05-28 02:50:46,570 - INFO - Dumping remote process 6832...
+2025-05-28 02:51:30,015 - INFO - Dumping remote process 7952...
+2025-05-28 02:52:43,053 - INFO - Starting Volatility 3 Automation.
+2025-05-28 02:52:43,054 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 02:52:50,052 - INFO - Re-running script as admin for live acquisition.
+2025-05-28 02:52:55,459 - INFO - Starting Volatility 3 Automation.
+2025-05-28 02:52:55,459 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 02:54:51,714 - INFO - Gathering remote machine details for acquisition.
+2025-05-28 02:55:00,171 - INFO - Establishing connection to \\192.168.112.146\C$ using net use...
+2025-05-28 02:55:00,204 - INFO - Creating dedicated subfolder: C:\Users\Administrator\AppData\Local\Temp\proc_dump_d592592b
+2025-05-28 02:55:25,520 - INFO - Copying procdump.exe to remote machine...
+2025-05-28 02:55:26,042 - INFO - Getting list of processes on remote machine...
+2025-05-28 02:57:47,170 - INFO - Selected PIDs for dumping: [6832, 8860]
+2025-05-28 02:57:47,170 - INFO - Dumping remote process 6832...
+2025-05-28 02:58:46,415 - INFO - Dumping remote process 8860...
+2025-05-28 02:59:12,674 - INFO - Copying \\192.168.112.146\C$\Users\Administrator\AppData\Local\Temp\proc_dump_d592592b\process_6832_dump.dmp to D:\college\GradProject\106-RedLine\trial\remote_process_dumps\process_6832_dump.dmp...
+2025-05-28 02:59:13,148 - WARNING - Failed to copy process dump: Command '['xcopy', '\\\\192.168.112.146\\C$\\Users\\Administrator\\AppData\\Local\\Temp\\proc_dump_d592592b\\process_6832_dump.dmp', 'D:\\college\\GradProject\\106-RedLine\\trial\\remote_process_dumps\\process_6832_dump.dmp', '/Y']' returned non-zero exit status 4.
+2025-05-28 02:59:13,148 - INFO - Copying \\192.168.112.146\C$\Users\Administrator\AppData\Local\Temp\proc_dump_d592592b\process_8860_dump.dmp to D:\college\GradProject\106-RedLine\trial\remote_process_dumps\process_8860_dump.dmp...
+2025-05-28 02:59:13,196 - WARNING - Failed to copy process dump: Command '['xcopy', '\\\\192.168.112.146\\C$\\Users\\Administrator\\AppData\\Local\\Temp\\proc_dump_d592592b\\process_8860_dump.dmp', 'D:\\college\\GradProject\\106-RedLine\\trial\\remote_process_dumps\\process_8860_dump.dmp', '/Y']' returned non-zero exit status 4.
+2025-05-28 02:59:13,196 - INFO - Successfully copied 0 process dumps.
+2025-05-28 02:59:35,439 - INFO - Disconnecting from \\192.168.112.146\C$
+2025-05-28 02:59:35,470 - ERROR - Memory acquisition failed or was cancelled.
+2025-05-28 02:59:35,470 - ERROR - Memory image or Volatility path not found. Exiting.
+2025-05-28 03:04:09,060 - INFO - Starting Volatility 3 Automation.
+2025-05-28 03:04:09,062 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 03:04:15,471 - INFO - Gathering remote machine details for acquisition.
+2025-05-28 03:04:20,354 - INFO - Establishing connection to \\192.168.112.146\C$ using net use...
+2025-05-28 03:04:20,424 - INFO - Creating dedicated subfolder: C:\Users\Administrator\AppData\Local\Temp\proc_dump_016fc7c6
+2025-05-28 03:04:42,867 - INFO - Copying procdump.exe to remote machine...
+2025-05-28 03:04:43,730 - INFO - Getting list of processes on remote machine...
+2025-05-28 03:06:10,461 - INFO - Selected PIDs for dumping: [9676]
+2025-05-28 03:06:10,548 - INFO - Dumping remote process 9676...
+2025-05-28 03:06:41,254 - INFO - Copying \\192.168.112.146\C$\Users\Administrator\AppData\Local\Temp\proc_dump_016fc7c6\process_9676_dump.dmp to D:\college\GradProject\106-RedLine\trial\remote_process_dumps\process_9676_dump.dmp...
+2025-05-28 03:06:41,805 - WARNING - Failed to copy process dump: Command '['xcopy', '\\\\192.168.112.146\\C$\\Users\\Administrator\\AppData\\Local\\Temp\\proc_dump_016fc7c6\\process_9676_dump.dmp', 'D:\\college\\GradProject\\106-RedLine\\trial\\remote_process_dumps\\process_9676_dump.dmp', '/Y']' returned non-zero exit status 4.
+2025-05-28 03:06:41,805 - INFO - Successfully copied 0 process dumps.
+2025-05-28 03:07:12,751 - INFO - Starting Volatility 3 Automation.
+2025-05-28 03:07:12,751 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 03:07:22,709 - INFO - Gathering remote machine details for acquisition.
+2025-05-28 03:07:47,560 - INFO - Establishing connection to \\192.168.112.146\C$ using net use...
+2025-05-28 03:07:47,593 - INFO - Creating dedicated subfolder: C:\Users\Administrator\AppData\Local\Temp\proc_dump_7f404453
+2025-05-28 03:08:09,748 - INFO - Copying procdump.exe to remote machine...
+2025-05-28 03:08:10,055 - INFO - Getting list of processes on remote machine...
+2025-05-28 03:09:09,194 - INFO - Selected PIDs for dumping: [8860]
+2025-05-28 03:09:09,235 - INFO - Dumping remote process 8860...
+2025-05-28 03:09:47,187 - INFO - Copying \\192.168.112.146\C$\Users\Administrator\AppData\Local\Temp\proc_dump_7f404453\process_8860_dump.dmp to D:\college\GradProject\106-RedLine\trial\remote_process_dumps\process_8860_dump.dmp...
+2025-05-28 03:10:04,609 - INFO - Successfully copied 1 process dumps.
+2025-05-28 03:10:27,148 - INFO - Disconnecting from \\192.168.112.146\C$
+2025-05-28 03:10:27,172 - INFO - Prompting user to select Volatility script path.
+2025-05-28 03:10:30,497 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 03:10:30,500 - WARNING - The provided memory image is a process dump. Some features may not be available.
+2025-05-28 03:12:12,229 - INFO - Exiting Volatility 3 Automation.
+2025-05-28 03:24:26,834 - INFO - Starting Volatility 3 Automation.
+2025-05-28 03:24:26,933 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 03:24:33,267 - INFO - Gathering remote machine details for acquisition.
+2025-05-28 03:24:38,098 - INFO - Establishing connection to \\192.168.112.146\C$ using net use...
+2025-05-28 03:24:38,652 - INFO - Creating dedicated subfolder: C:\Users\Administrator\AppData\Local\Temp\mem_acq_aa838bdf
+2025-05-28 03:25:01,342 - INFO - Copying winpmem_mini_x64_rc2.exe to C:\Users\Administrator\AppData\Local\Temp\mem_acq_aa838bdf\winpmem_mini_x64_rc2.exe via xcopy...
+2025-05-28 03:25:03,190 - INFO - Running winpmem on remote host to dump memory.
+2025-05-28 03:26:04,115 - INFO - Cleaning up subfolder: C:\Users\Administrator\AppData\Local\Temp\mem_acq_aa838bdf
+2025-05-28 03:26:27,744 - INFO - Disconnecting from \\192.168.112.146\C$
+2025-05-28 03:27:17,911 - INFO - Starting Volatility 3 Automation.
+2025-05-28 03:27:17,912 - INFO - Loaded 16 VirusTotal API keys.
+2025-05-28 03:27:21,607 - INFO - Gathering remote machine details for acquisition.
+2025-05-28 03:27:26,791 - INFO - Establishing connection to \\192.168.112.146\C$ using net use...
+2025-05-28 03:27:26,846 - INFO - Creating dedicated subfolder: C:\Users\Administrator\AppData\Local\Temp\proc_dump_694658e5
+2025-05-28 03:27:48,793 - INFO - Copying procdump.exe to remote machine...
+2025-05-28 03:27:49,153 - INFO - Getting list of processes on remote machine...
+2025-05-28 03:28:50,846 - INFO - Selected PIDs for dumping: [10696, 8860]
+2025-05-28 03:28:50,846 - INFO - Dumping remote process 10696...
+2025-05-28 03:29:23,947 - INFO - Dumping remote process 8860...
+2025-05-28 03:29:51,388 - INFO - Copying \\192.168.112.146\C$\Users\Administrator\AppData\Local\Temp\proc_dump_694658e5\process_10696_dump.dmp to D:\college\GradProject\106-RedLine\trial\remote_process_dumps\process_10696_dump.dmp...
+2025-05-28 03:29:57,952 - INFO - Copying \\192.168.112.146\C$\Users\Administrator\AppData\Local\Temp\proc_dump_694658e5\process_8860_dump.dmp to D:\college\GradProject\106-RedLine\trial\remote_process_dumps\process_8860_dump.dmp...
+2025-05-28 03:30:05,696 - INFO - Successfully copied 2 process dumps.
+2025-05-28 03:30:27,620 - INFO - Disconnecting from \\192.168.112.146\C$
+2025-05-28 03:30:27,646 - INFO - Prompting user to select Volatility script path.
+2025-05-28 03:30:30,936 - INFO - Volatility script selected: D:/Forensics tools/volatility3/vol.py
+2025-05-28 03:30:30,939 - WARNING - The provided memory image is a process dump. Some features may not be available.
