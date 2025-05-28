@@ -14,9 +14,16 @@ def main():
 
     # Load API keys
     vt_api_keys = load_vt_api_keys()
-
+    
     # Acquire Memory Dump & Volatility paths
-    memory_image, volatility_path = acquire_memory_and_volatility_paths(vt_api_keys)
+    memory_image, volatility_path, is_process_dump = acquire_memory_and_volatility_paths()
+    if is_process_dump:
+        print("Warning: The provided memory image is a process dump. Some features may not be available.")
+        logging.warning("The provided memory image is a process dump. Some features may not be available.")
+
+    if not memory_image or not volatility_path:
+        logging.error("Memory image or Volatility path not found. Exiting.")
+        return
 
     # Instantiate main analyzer
     analyzer = MemoryAnalyzer(memory_image, volatility_path, vt_api_keys)
